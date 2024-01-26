@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+	--header-height: 3rem;
+
+	/*========== Colors ==========*/
+	--hue: 202;
+	--sat: 100%;
+	--title-color: white;
+	--title-color-dark: rgb(197, 195, 255);
+	--title-color-light: rgb(214, 216, 255);
+	--text-color: white;
+	--body-color: #000321;
+	--container-color: #2d2d2d;
+
+	/*========== Font and typography ==========*/
+	--poppins-font: "Poppins", sans-serif;
+	--quicksand-font: "Quicksand", sans-serif;
+	--raleway-font: "Raleway", sans-serif;
+
+	/*.5rem = 8px | 1rem = 16px ...*/
+	--big-font-size: 3rem;
+	--h1-font-size: 2.25rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.25rem;
+	--normal-font-size: 1.1rem;
+	--small-font-size: 1rem;
+	--smaller-font-size: 0.9rem;
+	--tiny-font-size: 0.7rem;
+
+	/*========== Font weight ==========*/
+	--font-normal: 400;
+	--font-medium: 500;
+	--font-semi-bold: 600;
+
+	/*========== Margenes Bottom ==========*/
+	/*.5rem = 8px | 1rem = 16px ...*/
+	--mb-0-25: 0.25rem;
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+	font-family: var(--poppins-font);
+	background-color: var(--body-color);
+	color: var(--text-color);
+	font-size: var(--normal-font-size);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+	text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+li {
+	list-style: none;
 }
