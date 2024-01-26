@@ -1,12 +1,14 @@
-import './App.css'
-import Header from './components/header/Header.jsx'
+import './App.css';
+import Header from './components/header/Header.jsx';
+import Countdown from './components/countdown/countdown.jsx';
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
+      <Countdown />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
