@@ -10,12 +10,6 @@ const Header = () => {
                 <div>
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
-                                <i className="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
                             <a href="#about" className="nav__link">
                                 <i className="uil uil-user nav__icon"></i> About
                             </a>
@@ -36,12 +30,6 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#sponsors" className="nav__link">
                                 <i className="uil uil-scenery nav__icon"></i> Sponsors
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#gallery" className="nav__link">
-                                <i className="uil uil-message nav__icon"></i> Gallery
                             </a>
                         </li>
 
