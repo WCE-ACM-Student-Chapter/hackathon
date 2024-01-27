@@ -1,0 +1,38 @@
+.prizes-container {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #1c0638; /* Match the background color */
+  }
+  
+  .prizes-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .prize-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Set the desired background color with transparency */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  .prize-card h3 {
+    font-size: 2rem;
+    color: var(--title-color-light);
+  }
+  
+  .prize-card h4 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .prize-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
