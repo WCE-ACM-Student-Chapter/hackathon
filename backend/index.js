@@ -1,26 +1,38 @@
 const express = require('express')
 const app = express();
-
 require('dotenv').config()
-const PORT = process.env.PORT || 4000
-app.use(express.json());
 
-// const cookieParser = require('cookie-parser');
-// app.use(cookieParser());
- 
 
-const user = require('./routes/user')
-app.use("/api/v1",user);
+// Middleware
+app.use(express.json())
+//for interacting with files by express express-fileupload
+// Multer Can also be used
+const fileUpload = require('express-fileupload')
+app.use(fileUpload({
+    useTempFiles : true,
+    tempFileDir : '/tmp/'
+}))
+
+
+const PORT = process.env.PORT||4000
+
+
+const ConnectDb = require('./config/database');
+ConnectDb()
+
+const cloudinary = require('./config/cloudinary')
+cloudinary.cloudinaryConnect()
+
+//Mounting
+const Upload = require('./routes/user')
+app.use('/api/v1/upload',Upload)
+
+// 
 
 app.listen(PORT,()=>{
-    console.log("Server Started at PORT 3000");
+    console.log(`Server Started At PORT ${PORT}`)
 })
 
-
-const dbConnect = require('./config/database')
-dbConnect()
-
-app.get("/",(req,res)=>{
-    res.send(`App started at ${PORT}`)
+app.get('/',(req,res)=>{
+    res.send("Here We go")
 })
-
