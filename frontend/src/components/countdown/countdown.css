@@ -1,38 +1,36 @@
 .countdown-container {
-	margin-top: 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	flex-direction: row;
-	/* Arrange boxes in a row */
-  }
-  
-  .countdown-box {
+	width: 100%;
+}
+
+.countdown-box {
 	text-align: center;
-	border-radius: 8px;
-	padding: 20px;
-	margin: 0 5px;
-	width: 150px; /* Set a fixed width for all boxes */
-	/* Set the background to transparent */
+	padding: 7px 10px;
+	width: 85px;
 	background: transparent;
-	/* Add an outline for a more pronounced 3D effect */
-	outline: 2px solid #af7c4c;
-	outline-offset: -4px;
-  }
-  
-  .countdown-box span {
-	display: block;
-	font-size: 24px;
+	border-right: 2px solid white;
+	box-sizing: border-box;
+}
+
+.countdown-box:last-child {
+	border-right: none;
+}
+
+.countdown-box span {
+	font-family: "IntegralCF-Bold", sans-serif;
+	font-size: 32px;
 	font-weight: bold;
-	color: white; /* Set text color to white */
-  }
-  
-  .countdown-box p {
+	color: white;
+	letter-spacing: 0.5px;
+	line-height: 1;
+}
+
+.countdown-box p {
+	font-family: "IntegralCF-Regular", sans-serif;
 	font-size: 14px;
-	color: white; /* Set text color to white */
-	margin: 5px 0 0 0;
-  }
-  
+	letter-spacing: 1px;
+	color: white;
+	margin-bottom: 0;
+}

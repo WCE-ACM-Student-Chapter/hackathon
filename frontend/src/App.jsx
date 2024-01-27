@@ -12,8 +12,7 @@ const App = () => {
     <>
       <Header />
       <Home />
-      <About /> {/* Render the About component with the ID */}
-      <Countdown />
+      <About />
     </>
   );
 };

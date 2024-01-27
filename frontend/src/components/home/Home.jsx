@@ -4,6 +4,7 @@ import { faDiscord, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/f
 import Container from 'react-bootstrap/esm/Container'
 import './home.css'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import Countdown from '../countdown/countdown'
 
 const Home = () => {
     useEffect(() => {
@@ -39,8 +40,9 @@ const Home = () => {
                 <div className="title">
                     <div id='college'><span>WCE</span></div>
                     <span id='main_title'>HACKATHON</span>
-                    <div id='year'><span>2024</span></div>
-                    <div id="tagline">IDEATE | BUILD | DEPLOY</div>
+                    <div id='year'><span>16 MAR 24</span></div>
+                    {/* <div id="tagline">IDEATE | BUILD | DEPLOY</div> */}
+                    <div id="tagline">CODE | CREATE | CONQUER</div>
                     <div className='info_container'><span id='info'></span></div>
                     <div className='button_container'>
                         <button className='button'>Participate</button>
@@ -56,7 +58,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="right_part">
-                <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706375287/hackathon/l9kvoft6riqrbnlmtjyq.webp" alt="WCE Hackathon '24" />
+                <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706379596/hackathon/sdzjeyfnes8xxuxwdahv.png" alt="WCE Hackathon '24" />
+                <Countdown />
             </div>
         </Container>
     )

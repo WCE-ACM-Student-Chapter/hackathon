@@ -8,7 +8,9 @@ const Countdown = () => {
   const [seconds, setSeconds] = useState('00');
 
   useEffect(() => {
-    const targetDate = new Date().getTime() + 1000 * 3600 * 48;
+    const targetDate = new Date(2024, 2, 16, 0, 0, 0, 0).getTime();
+    const pad = (n) => (n < 10 ? '0' : '') + n;
+    console.log(targetDate)
 
     const interval = setInterval(() => {
       const currentDate = new Date().getTime();
@@ -26,26 +28,24 @@ const Countdown = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const pad = (n) => (n < 10 ? '0' : '') + n;
-
+  
   return (
     <div className="countdown-container">
       <div className="countdown-box">
         <span>{days}</span>
-        <p>Days</p>
+        <p>DAYS</p>
       </div>
       <div className="countdown-box">
         <span>{hours}</span>
-        <p>Hours</p>
+        <p>HRS</p>
       </div>
       <div className="countdown-box">
         <span>{minutes}</span>
-        <p>Minutes</p>
+        <p>MINS</p>
       </div>
       <div className="countdown-box">
         <span>{seconds}</span>
-        <p>Seconds</p>
+        <p>SECS</p>
       </div>
     </div>
   );
