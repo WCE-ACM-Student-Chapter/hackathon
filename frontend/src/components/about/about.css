@@ -1,0 +1,22 @@
+/* about.css */
+
+#about {
+  margin-top: 45rem;
+  padding: 20px;
+  border: 2px solid #ddd; /* Border color */
+  border-radius: 10px; /* Border radius for rounded corners */
+  background-color: #090b43; /* Background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle 3D effect */
+  text-align: left; /* Align text to the left within the box */
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 16px;
+  color: #fff; /* Change text color to white */
+  margin-bottom: 10px;
+}
