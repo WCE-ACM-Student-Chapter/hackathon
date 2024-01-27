@@ -1,31 +1,55 @@
-import React from 'react'
-import './header.css'
+import React, { useState } from "react";
+import "./header.css";
 
 const Header = () => {
-    return (
-        <header className="header">
-            <nav className="nav container">
-                <a href="index.html" className='nav__logo'>WCE Hackathon</a>
+  const [Toggle, showMenu] = useState(false);
+
+  const handleAboutClick = () => {
+    const aboutSection = document.getElementById("about");
+
+    if (aboutSection) {
+      aboutSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    // Optional: Close the menu if needed
+    showMenu(false);
+  };
+
+  return (
+    <header className="header">
+      <nav className="nav container">
+        <a href="index.html" className="nav__logo">
+          WCE Hackathon
+        </a>
 
                 <div>
                     <ul className="nav__list grid">
+                        <li className="nav__item">
+                            <a href="#home" className="nav__link active-link">
+                                <i className="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+
                         <li className="nav__item">
                             <a href="#about" className="nav__link">
                                 <i className="uil uil-user nav__icon"></i> About
                             </a>
                         </li>
 
-                        <li className="nav__item">
-                            <a href="#schedule" className="nav__link">
-                                <i className="uil uil-file-alt nav__icon"></i> Schedule
-                            </a>
-                        </li>
+            <li className="nav__item">
+              <a href="#schedule" className="nav__link">
+                <i className="uil uil-file-alt nav__icon"></i> Schedule
+              </a>
+            </li>
 
-                        <li className="nav__item">
-                            <a href="#themes" className="nav__link">
-                                <i className="uil uil-briefcase-alt nav__icon"></i> Themes
-                            </a>
-                        </li>
+            <li className="nav__item">
+              <a href="#themes" className="nav__link">
+                <i className="uil uil-briefcase-alt nav__icon"></i> Themes
+              </a>
+            </li>
 
                         <li className="nav__item">
                             <a href="#sponsors" className="nav__link">
@@ -34,27 +58,37 @@ const Header = () => {
                         </li>
 
                         <li className="nav__item">
-                            <a href="#contact" className="nav__link">
-                                <i className="uil uil-message nav__icon"></i> Contact
+                            <a href="#gallery" className="nav__link">
+                                <i className="uil uil-message nav__icon"></i> Gallery
                             </a>
                         </li>
 
-                        <li className="nav__item">
-                            <a href="#register" className="nav__link">
-                                <i className="uil uil-message nav__icon"></i> Register Now
-                            </a>
-                        </li>
-                    </ul>
+            <li className="nav__item">
+              <a href="#contact" className="nav__link">
+                <i className="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
 
-                    <i className="uil uil-times nav__close" id="nav-close" onClick={() => showMenu(!Toggle)}></i>
-                </div>
+            <li className="nav__item">
+              <a href="#register" className="nav__link">
+                <i className="uil uil-message nav__icon"></i> Register Now
+              </a>
+            </li>
+          </ul>
 
-                <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-                    <i className="uil uil-apps"></i>
-                </div>
-            </nav>
-        </header>
-    )
-}
+          <i
+            className="uil uil-times nav__close"
+            id="nav-close"
+            onClick={() => showMenu(!Toggle)}
+          ></i>
+        </div>
 
-export default Header
+        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+          <i className="uil uil-apps"></i>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
