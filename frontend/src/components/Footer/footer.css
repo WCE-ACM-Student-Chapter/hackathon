@@ -1,29 +1,28 @@
 footer {
-  background-color: #1c0638; /* Match the background color */
   color: white;
   padding: 20px 0;
-  text-align: center; /* Center align text */
+  text-align: center;
 }
 
 .content {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Change to column layout */
-  align-items: center; /* Center content */
+  flex-direction: column; 
+  align-items: center;
 }
 
 .top {
   display: flex;
-  flex-direction: column; /* Change to column layout */
-  justify-content: center; /* Center content */
-  align-items: center; /* Center content */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .logo-details {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Add margin for separation */
+  margin-bottom: 10px;
 }
 
 .logo-details img {
@@ -39,7 +38,7 @@ footer {
 
 .link-boxes {
   display: flex;
-  margin-bottom: 10px; /* Add margin for separation */
+  margin-bottom: 10px; 
 }
 
 .box1 img {
