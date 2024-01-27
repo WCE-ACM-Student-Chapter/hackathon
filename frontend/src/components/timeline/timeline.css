@@ -1,0 +1,116 @@
+/* Timeline Container */
+.timeline {
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* tcard container */
+.tcard {
+    position: relative;
+    max-width: 450px;
+}
+
+/* setting padding based on even or odd */
+.tcard:nth-child(odd) {
+    padding: 50px 0 50px 50px;
+}
+
+.tcard:nth-child(even) {
+    padding: 50px 50px 50px 0;
+}
+
+/* Global ::before */
+.tcard::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid var(--title-color-light);
+}
+
+/* Setting the border of top, bottom, left */
+.tcard:nth-child(odd)::before {
+    left: 0px;
+    top: -4.9px;
+    bottom: -4.9px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+}
+
+/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+@media only screen and (max-width: 400px) {
+    .tcard:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+    }
+}
+
+/* Setting the border of top, bottom, right */
+.tcard:nth-child(even)::before {
+    right: 2px;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first tcard */
+.tcard:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last tcard  and it's odd */
+.tcard:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last tcard  and it's even */
+.tcard:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    background: #1d1d20;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Title of the tcard */
+.tcard .title {
+    color: var(--title-color-light);
+    position: relative;
+}
+
+/* Timeline dot  */
+.tcard .title::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 999px;
+    margin-left: -2px;
+}
+
+/* text right if the tcard is even  */
+.tcard:nth-child(even)>.info>.title {
+    text-align: right;
+}
+
+/* setting dot to the left if the tcard is odd */
+.tcard:nth-child(odd)>.info>.title::before {
+    left: -68px;
+}
+
+/* setting dot to the right if the tcard is odd */
+.tcard:nth-child(even)>.info>.title::before {
+    right: -68px;
+}

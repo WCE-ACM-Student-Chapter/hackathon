@@ -14,7 +14,7 @@ const Home = () => {
                 document.getElementById("info").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
                 setTimeout(function () {
                     typeWriter(text, i + 1, fnCallback)
-                }, 100);
+                }, 50);
             } else if (typeof fnCallback == 'function') {
                 setTimeout(fnCallback, 1000);
             }

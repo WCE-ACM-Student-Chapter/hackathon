@@ -1,0 +1,43 @@
+import React from 'react'
+import './timeline.css'
+
+const Timeline = () => {
+    return (
+        <div class="timeline">
+            <div class="outer">
+                <div class="tcard">
+                    <div class="info">
+                        <h3 class="title">Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="info">
+                        <h3 class="title">Title 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="info">
+                        <h3 class="title">Title 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="info">
+                        <h3 class="title">Title 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="info">
+                        <h3 class="title">Title 5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Timeline
