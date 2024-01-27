@@ -1,15 +1,8 @@
 const express = require('express')
-const router = express.Router();
-const User = require('../models/UserModel')
-
-const {signup} = require('../controllers/Auth')
-
-router.post('/signup',signup)
+const router = express.Router()
 const {imageUpload,videoUpload} = require('../controllers/imageUpload')
-// imageUpload,videoUpload,imageReducerUpload   
-// API Router 
+const {signup} = require('../controllers/Auth')
 router.post('/ImageUpload',imageUpload)
 router.post('/videoUpload',videoUpload)
-
-
-module.exports = router;
+router.post('/signup',signup)
+module.exports = router

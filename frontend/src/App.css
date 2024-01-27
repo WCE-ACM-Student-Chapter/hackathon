@@ -2,25 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-	--header-height: 3rem;
+	--header-height: 3.3rem;
 
 	/*========== Colors ==========*/
 	--hue: 202;
 	--sat: 100%;
 	--title-color: white;
 	--title-color-dark: rgb(197, 195, 255);
-	--title-color-light: rgb(214, 216, 255);
+	--title-color-light: rgb(227, 229, 255);
 	--text-color: white;
-	--body-color: #000321;
-	--container-color: #2d2d2d;
+	--body-color: #141415;
+	--container-color: #1c0638;
 
 	/*========== Font and typography ==========*/
 	--poppins-font: "Poppins", sans-serif;
 	--quicksand-font: "Quicksand", sans-serif;
 	--raleway-font: "Raleway", sans-serif;
+	--montserrat-font: "Montserrat", sans-serif;
 
 	/*.5rem = 8px | 1rem = 16px ...*/
 	--big-font-size: 3rem;
@@ -49,11 +52,31 @@
 	--mb-3: 3rem;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: var(--poppins-font);
 	background-color: var(--body-color);
+	background: radial-gradient(circle farthest-side at 70% 35%, var(--container-color), var(--body-color) 70%);
 	color: var(--text-color);
 	font-size: var(--normal-font-size);
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	-webkit-appearance: none;
 }
 
 a {
@@ -62,4 +85,40 @@ a {
 
 li {
 	list-style: none;
+}
+
+button {
+	font-family: var(--raleway-font);
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	background-color: var(--title-color-light);
+	border: 2px solid var(--title-color-light);
+	border-radius: 50px;
+	padding: 0.5rem 1rem;
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+	background-color: transparent;
+	color: white;
+}
+
+@font-face {
+	font-family: "IntegralCF-Heavy";
+	src: local("IntegralCF-Heavy"),
+		url("./fonts/IntegralCF-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "IntegralCF-Bold";
+	src: local("IntegralCF-Bold"),
+		url("./fonts/IntegralCF-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "IntegralCF-Regular";
+	src: local("IntegralCF-Regular"),
+		url("./fonts/IntegralCF-Regular.woff2") format("woff2");
 }

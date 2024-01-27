@@ -5,13 +5,12 @@ require('dotenv').config()
 exports.signup = async (req,res) =>{
     try{
         const {name,email} = req.body
-
         // Check if User already exist
         const existUser = await User.findOne({email});
         if(existUser){
             return res.status(400).json({
                 sucess:false,
-                message: "User already Exists",
+                message: "User already Exist",
             });
         }
 
@@ -19,6 +18,7 @@ exports.signup = async (req,res) =>{
             name,
             email
         })
+
         res.status(200).json({
             sucess:true,
             message:"User Created Sucessfully"
