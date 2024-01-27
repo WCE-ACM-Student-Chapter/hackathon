@@ -1,7 +1,7 @@
 .prizes-container {
     text-align: center;
     padding: 80px 0;
-    background-color: #1c0638; /* Match the background color */
+    background-color: #1c0638; 
   }
   
   .prizes-list {
@@ -12,13 +12,13 @@
   }
   
   .prize-card {
-    background-color: rgba(255, 255, 255, 0.1); /* Set the desired background color with transparency */
+    background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 15px;
     padding: 20px;
     margin: 20px;
     max-width: 300px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .prize-card h3 {

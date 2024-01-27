@@ -1,4 +1,4 @@
-// sponsors.jsx
+
 import React from 'react';
 import './sponsors.css';
 
@@ -15,7 +15,7 @@ const Sponsors = () => {
     { id: 1, name: 'Sponsor 1', description: 'Description for Sponsor 1', logoSrc: 'sponsor1.jpg' },
     { id: 2, name: 'Sponsor 2', description: 'Description for Sponsor 2', logoSrc: 'sponsor2.jpg' },
     { id: 3, name: 'Sponsor 3', description: 'Description for Sponsor 3', logoSrc: 'sponsor3.jpg' },
-    // Add more sponsors as needed
+    
   ];
 
   return (
