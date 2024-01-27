@@ -1,4 +1,3 @@
-// prizes.jsx
 
 import React from 'react';
 import './prizes.css';
@@ -8,7 +7,7 @@ const Prizes = () => {
     { id: 1, position: '1st', name: 'First Prize', description: 'Lorem ipsum dolor sit amet.' },
     { id: 2, position: '2nd', name: 'Second Prize', description: 'Consectetur adipiscing elit.' },
     { id: 3, position: '3rd', name: 'Third Prize', description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    // You can add more prizes or customize as needed
+    
   ];
 
   return (
