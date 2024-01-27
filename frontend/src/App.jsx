@@ -6,6 +6,7 @@ import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx';
 import Countdown from './components/countdown/countdown.jsx';
 import About from './components/about/about.jsx';
+import Footer from './components/Footer/footer.jsx';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Home />
       <About /> {/* Render the About component with the ID */}
       <Countdown />
+      <Footer />
     </>
   );
 };
