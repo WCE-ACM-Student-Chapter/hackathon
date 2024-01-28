@@ -3,36 +3,35 @@ import './timeline.css'
 
 const Timeline = () => {
     return (
-        <div class="timeline" id='timeline'>
-            <div class="outer">
-                <div class="tcard">
-                    <div class="info">
-                        <h3 class="title">Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div className="timeline" id='timeline'>
+            <header>TIMELINE</header>
+            <div className="outer">
+                <div className="tcard">
+                    <div className="info">
+                        <div className="date">4th Feb 12:00 AM</div>
+                        <div className="heading">Registration Starts</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
                 </div>
-                <div class="tcard">
-                    <div class="info">
-                        <h3 class="title">Title 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div className="tcard">
+                    <div className="info">
+                        <div className="date">4th Feb 12:00 AM</div>
+                        <div className="heading">Registration Starts</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
                 </div>
-                <div class="tcard">
-                    <div class="info">
-                        <h3 class="title">Title 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div className="tcard">
+                    <div className="info">
+                        <div className="date">4th Feb 12:00 AM</div>
+                        <div className="heading">Registration Starts</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
                 </div>
-                <div class="tcard">
-                    <div class="info">
-                        <h3 class="title">Title 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div>
-                </div>
-                <div class="tcard">
-                    <div class="info">
-                        <h3 class="title">Title 5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div className="tcard">
+                    <div className="info">
+                        <div className="date">4th Feb 12:00 AM</div>
+                        <div className="heading">Registration Starts</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
                 </div>
             </div>

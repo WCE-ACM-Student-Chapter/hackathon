@@ -40,7 +40,7 @@ const Home = () => {
                 <div className="title">
                     <div id='college'><span>WCE</span></div>
                     <span id='main_title'>HACKATHON</span>
-                    <div id='year'><span>16 MAR 24</span></div>
+                    <div id='year'><span>16-17 MAR 24</span></div>
                     {/* <div id="tagline">IDEATE | BUILD | DEPLOY</div> */}
                     <div id="tagline">CODE | CREATE | CONQUER</div>
                     <div className='info_container'><span id='info'></span></div>

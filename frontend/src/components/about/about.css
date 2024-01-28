@@ -1,17 +1,23 @@
 #about {
 	width: 83%;
 	margin: auto;
-	padding: 100px;
+	padding-top: 80px;
 	text-align: center;
 }
 
-#about h2 {
-	font-size: 28px;
-	margin-bottom: 15px;
+.about_container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	height: 300px;
 }
 
 #about p {
-	font-size: 16px;
+	font-size: 18px;
+	width: 80%;
+	font-family: var(--raleway-font);
 	color: #fff;
+	line-height: 1.6;
 	margin-bottom: 10px;
 }

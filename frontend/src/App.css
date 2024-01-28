@@ -107,6 +107,18 @@ button:hover {
 	color: white;
 }
 
+header {
+	font-family: "IntegralCF-Bold", sans-serif;
+	font-size: 35px;
+	letter-spacing: 1px;
+	transition: .5s ease-in-out;
+	background: transparent;
+}
+
+header:hover {
+	transform: scale(1.05);
+}
+
 @font-face {
 	font-family: "IntegralCF-Heavy";
 	src: local("IntegralCF-Heavy"),
