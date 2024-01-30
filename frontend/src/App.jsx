@@ -9,6 +9,7 @@ import Footer from './components/Footer/footer.jsx';
 import Sponsors from './components/sponsors/sponsors.jsx';
 import Timeline from './components/timeline/Timeline.jsx';
 import FAQ from './components/faq/FAQ.jsx';
+import Themes from './components/themes/Themes.jsx';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 
@@ -23,6 +24,7 @@ const App = () => {
 			<Home />
 			<About />
 			<Timeline />
+			<Themes />
 			<Prizes />
 			<Sponsors />
 			<FAQ />

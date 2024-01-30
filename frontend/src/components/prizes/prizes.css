@@ -5,20 +5,31 @@
 
 .prizes-list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 50px;
 	flex-wrap: wrap;
-	height: 400px;
+	height: 500px;
 	margin-top: 40px;
 }
 
 .prize-card {
-	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 15px;
+	background-color: #1a1a1b;
+	border-radius: 20px;
 	padding: 20px;
 	margin: 20px;
-	max-width: 300px;
+	max-width: 330px;
 	width: 100%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	transition: .3s ease-in-out;
+}
+
+.prize-card:hover {
+	transform: scale(1.02);
 }
 
 .prize-card h3 {
@@ -37,11 +48,26 @@
 }
 
 .circle {
-    position: relative;
-    width: 100%;
-    height: 50%;
+	position: relative;
+    width: 120%;
+    height: 100%;
+	margin-top: -230px;
+	border-radius: 999px;
     background: #232323;
-    -webkit-clip-path: circle(200px at center 0);
-    clip-path: circle(200px at center 0);
     text-align: center;
+	flex-shrink: 0;
+}
+
+.prize-card .medal {
+	position: absolute;
+	margin-top: -25px;
+	font-size: 8rem;
+}
+
+.prize-card .description {
+	margin-top: 25px;
+	font-family: var(--quicksand-font);
+	font-weight: 500;
+	font-size: 18px;
+	padding: 0 10px;
 }

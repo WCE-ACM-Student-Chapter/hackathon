@@ -3,9 +3,9 @@ import './prizes.css';
 
 const Prizes = () => {
 	const prizesData = [
-		{ id: 1, icon: '🥈', name: 'First Prize', description: 'Lorem ipsum dolor sit amet.' },
-		{ id: 2, icon: '🥇', name: 'Second Prize', description: 'Consectetur adipiscing elit.' },
-		{ id: 3, icon: '🥉', name: 'Third Prize', description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+		{ id: 1, icon: '🥈', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, hic facilis ut laboriosam nam explicabo omnis officia atque voluptates impedit.' },
+		{ id: 2, icon: '🥇', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, hic facilis ut laboriosam nam explicabo omnis officia atque voluptates impedit.' },
+		{ id: 3, icon: '🥉', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, hic facilis ut laboriosam nam explicabo omnis officia atque voluptates impedit.'},
 	];
 
 	return (
@@ -15,9 +15,8 @@ const Prizes = () => {
 				{prizesData.map((prize) => (
 					<div key={prize.id} className='prize-card'>
 						<div className="circle"></div>
-						<span>{prize.icon}</span>
-						<span>{prize.name}</span>
-						<span>{prize.description}</span>
+						<span className='medal'>{prize.icon}</span>
+						<span className='description'>{prize.description}</span>
 					</div>
 				))}
 			</div>

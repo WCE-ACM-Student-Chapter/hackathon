@@ -63,7 +63,8 @@
 body {
 	font-family: var(--poppins-font);
 	background-color: var(--body-color);
-	background: radial-gradient(circle farthest-side at 80% 40%, var(--container-color) 10%, var(--body-color) 40%);
+	background:
+		radial-gradient(circle farthest-side at 80% 40%, var(--container-color) 10%, var(--body-color) 40%);
 	background-attachment: fixed;
 	color: var(--text-color);
 	font-size: var(--normal-font-size);

@@ -18,6 +18,7 @@ const Header = () => {
 						<Nav.Link href="#gallery">Gallery</Nav.Link>
 						<Nav.Link href="#sponsors">Sponsors</Nav.Link>
 						<Nav.Link href="#contact">Contact</Nav.Link>
+						<Nav.Link href="#faqs">FAQS</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
