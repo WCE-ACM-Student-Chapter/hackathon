@@ -8,12 +8,12 @@
 	justify-content: center;
 	gap: 50px;
 	flex-wrap: wrap;
-	height: 500px;
 	margin-top: 40px;
 }
 
 .prize-card {
 	background-color: #1a1a1b;
+	height: 500px;
 	border-radius: 20px;
 	padding: 20px;
 	margin: 20px;
@@ -51,7 +51,7 @@
 	position: relative;
     width: 120%;
     height: 100%;
-	margin-top: -230px;
+	margin-top: -270px;
 	border-radius: 999px;
     background: #232323;
     text-align: center;
