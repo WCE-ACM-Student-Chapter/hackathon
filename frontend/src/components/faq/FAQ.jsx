@@ -15,6 +15,23 @@ const FAQ = () => {
                         </Accordion.Body>
                     </Accordion.Item>
                 ))}
+                 <Accordion.Item eventKey="0">
+                    <Accordion.Header>Contact Information</Accordion.Header>
+                    <Accordion.Body>
+                        <p>
+                            For queries contact :
+                            <br/>
+                            Viraj Takone : +91 7420098224, 
+                            <br/>
+                            Vaibhav Fulmali : +91 8530084596, 
+                            <br/>
+                            Sanika patil : +91 9423236973
+                        </p>
+                        <p>
+                            You can also reach us by email at wce_acm@gmail.com
+                        </p>
+                    </Accordion.Body>
+                </Accordion.Item>
             </Accordion>
         </div>
     );
