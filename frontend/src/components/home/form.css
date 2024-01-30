@@ -1,12 +1,11 @@
 form {
-    margin-top: 60px;
     font-family: var(--quicksand-font);
     width: 50vw;
     font-size: 18px;
-    background-color: #4343437a;
+    background-color: #1e1c22;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 50px;
+    padding: 40px 60px;
 }
 
 @media screen and (max-width: 1000px) {

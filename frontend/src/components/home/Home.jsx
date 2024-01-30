@@ -1,12 +1,19 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import Container from 'react-bootstrap/esm/Container'
 import './home.css'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import Countdown from '../countdown/countdown'
+import RegistrationForm from './RegistrationForm'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
+    const [toggleState, setToggleState] = useState(0);
+    const toggleTab = (index) => {
+        setToggleState(index);
+    }
+
     useEffect(() => {
         var dataText = ["Battle of Development.", "Win Amazing Prizes.", "Separate Tracks.", "Novice and Expert."];
         function typeWriter(text, i, fnCallback) {
@@ -45,8 +52,14 @@ const Home = () => {
                     <div id="tagline">CODE | CREATE | CONQUER</div>
                     <div className='info_container'><span id='info'></span></div>
                     <div className='button_container'>
-                        <button className='button'>Participate</button>
+                        <button className='button' onClick={() => toggleTab(1)}>Participate</button>
                         <button className='button'>Become a Mentor</button>
+                    </div>
+                    <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+                        <div className="form_container">
+                            <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="form-close" />
+                            <RegistrationForm />
+                        </div>
                     </div>
                     <div className='icons_container'>
                         <FontAwesomeIcon icon={faDiscord} className='social_icons' />

@@ -1,7 +1,7 @@
 import React from 'react';
-import './contact.css';
+import './organizers.css';
 
-const Contact = () => {
+const Organizers = () => {
     const contactPersons = [
         { id: 1, name: "Dr. B. F. Momin", post: "Head", info: "IIE Cell, WCE Sangli" },
         { id: 0, name: "Dr. P. G. Sonavane", post: "I/C Director", info: "WCE Sangli" },
@@ -29,4 +29,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Organizers;
