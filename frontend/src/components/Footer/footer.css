@@ -1,88 +1,22 @@
 footer {
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+	color: white;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
+footer img {
+	width: 100px;
 }
 
-.top {
-  display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
+.copyright_text {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
 }
 
-.logo-details {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.logo-details img {
-  width: 40px; 
-  margin-right: 10px;
-}
-
-.media-icons a {
-  color: white;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-.link-boxes {
-  display: flex;
-  margin-bottom: 10px; 
-}
-
-.box1 img {
-  width: 30px;
-}
-
-.bottom-details {
-  margin-top: 20px;
-}
-
-.bottom_text {
-  display: flex;
-  flex-direction: column; /* Change to column layout */
-  justify-content: center; /* Center content */
-  align-items: center; /* Center content */
-}
-
-.copyright_text,
-.policy_terms,
-a {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 10px; /* Add margin for separation */
-}
-
-.template {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #1c0638; /* Match the background color */
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.template-left {
-  max-width: 80%;
-}
-
-.template-close {
-  width: 20px;
-  cursor: pointer;
+.copyright_text span {
+	font-family: var(--quicksand-font);
+	font-weight: 500;
 }

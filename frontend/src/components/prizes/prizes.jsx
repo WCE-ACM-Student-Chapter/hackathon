@@ -9,7 +9,7 @@ const Prizes = () => {
 	];
 
 	return (
-		<div className="prizes-container">
+		<div className="prizes-container" id='prizes'>
 			<header>Prizes</header>
 			<div className="prizes-list">
 				{prizesData.map((prize) => (

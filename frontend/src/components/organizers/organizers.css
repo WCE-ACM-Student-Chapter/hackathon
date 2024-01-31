@@ -12,30 +12,45 @@
 .contact-persons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px; 
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px; 
 }
 
 .person {
-    width: 30%;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align: center; 
+    width: 350px;
+    height: 130px;
+    padding: 20px;
+    background-color: #232323;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
 }
 
-.person:nth-child(3n) {
-    margin-right: 0;
+.person p:nth-child(1) {
+    font-family: 'IntegralCF-Regular', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(255, 240, 178);
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.person p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 7px;
+}
+
+.person p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .person p {
     margin: 0;
-}
-
-.person p:first-child {
-    color: yellow;
+    font-family: var(--quicksand-font);
 }
 
 .person p:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {

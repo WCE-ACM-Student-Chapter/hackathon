@@ -1,20 +1,23 @@
 const express = require('express')
 const app = express();
+const cors = require('cors');
+
 require('dotenv').config()
 
-
 // Middleware
+app.use(cors());
 app.use(express.json())
+
 //for interacting with files by express express-fileupload
 // Multer Can also be used
 const fileUpload = require('express-fileupload')
 app.use(fileUpload({
-    useTempFiles : true,
-    tempFileDir : '/tmp/'
+    useTempFiles: true,
+    tempFileDir: '/tmp/'
 }))
 
 
-const PORT = process.env.PORT||4000
+const PORT = process.env.PORT || 4000
 
 
 const ConnectDb = require('./config/database');
@@ -25,14 +28,14 @@ cloudinary.cloudinaryConnect()
 
 //Mounting
 const Upload = require('./routes/user')
-app.use('/api/v1/upload',Upload)
+app.use('/api/v1/upload', Upload)
 
 // 
 
-app.listen(PORT,()=>{
+app.listen(PORT, () => {
     console.log(`Server Started At PORT ${PORT}`)
 })
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     res.send("Here We go")
 })

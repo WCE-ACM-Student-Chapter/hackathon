@@ -6,7 +6,7 @@ const Gallery = () => {
     const imageFiles = Array.from({ length: 10 }, (_, index) => index + 1);
 
     return (
-        <div className="gallery_container">
+        <div className="gallery_container" id='gallery'>
             <header>GALLERY</header>
             <Carousel>
                 {imageFiles.map((imageNumber) => (
