@@ -11,6 +11,7 @@ import Timeline from './components/timeline/Timeline.jsx';
 import FAQ from './components/faq/FAQ.jsx';
 import Themes from './components/themes/Themes.jsx';
 import Organizers from './components/organizers/Organizers.jsx';
+import Gallery from './components/gallery/Gallery.jsx';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 
@@ -27,6 +28,7 @@ const App = () => {
 			<Timeline />
 			<Themes />
 			<Prizes />
+			<Gallery />
 			<Sponsors />
 			<Organizers />
 			<FAQ />

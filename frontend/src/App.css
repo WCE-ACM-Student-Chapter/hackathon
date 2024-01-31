@@ -90,6 +90,10 @@ li {
 	list-style: none;
 }
 
+p {
+	margin: 0;
+}
+
 button {
 	font-family: var(--raleway-font);
 	font-weight: 600;
@@ -110,7 +114,7 @@ button:hover {
 
 header {
 	font-family: "IntegralCF-Bold", sans-serif;
-	font-size: 35px !important	;
+	font-size: 37px;
 	letter-spacing: 1px;
 	transition: .5s ease-in-out;
 	background: transparent;

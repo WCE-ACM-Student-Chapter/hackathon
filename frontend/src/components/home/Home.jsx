@@ -71,7 +71,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="right_part">
-                <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706379596/hackathon/sdzjeyfnes8xxuxwdahv.png" alt="WCE Hackathon '24" />
+                <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706690072/hackathon/o1vyqhxcv6yawv10gapw.png" alt="WCE Hackathon '24" />
                 <Countdown />
             </div>
         </Container>
