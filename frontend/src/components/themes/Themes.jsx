@@ -10,11 +10,11 @@ const Themes = () => {
     }
 
     return (
-        <div className='themes_container' id='themes'>
+        <div className='themes_container' id='themes' data-aos="fade-up">
             <header>THEMES</header>
 
             <div className="services__container container grid">
-                <div className="services__content">
+                <div className="services__content" data-aos="zoom-in-right">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615898/hackathon/Theme%20Icons/twoemik5kromlkb5i1vb.png" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">AI - ML</h3>
@@ -54,7 +54,7 @@ const Themes = () => {
                     </div>
                 </div>
 
-                <div className="services__content">
+                <div className="services__content" data-aos="zoom-in-up">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691075/hackathon/Theme%20Icons/wg4hjadihhk6fsbh4hm1.png" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">Health Care</h3>
@@ -94,7 +94,7 @@ const Themes = () => {
                     </div>
                 </div>
 
-                <div className="services__content">
+                <div className="services__content" data-aos="zoom-in-left">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615886/hackathon/Theme%20Icons/sbhldkmxta52z0mwgdvb.webp" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">Renewable Energy</h3>
@@ -134,7 +134,7 @@ const Themes = () => {
                     </div>
                 </div>
 
-                <div className="services__content">
+                <div className="services__content" data-aos="zoom-in-right">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615886/hackathon/Theme%20Icons/ojbtu3a4bxxsthzzvnwi.webp" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">Agriculture</h3>
@@ -174,7 +174,7 @@ const Themes = () => {
                     </div>
                 </div>
 
-                <div className="services__content">
+                <div className="services__content" data-aos="zoom-in-up">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706692286/hackathon/Theme%20Icons/wppxo3pbojdlsxfzc3ff.png" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">Environment</h3>
@@ -214,7 +214,7 @@ const Themes = () => {
                     </div>
                 </div>
 
-                <div className="services__content">
+                <div className="services__content" data-aos="zoom-in-left">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691940/hackathon/Theme%20Icons/ot3pydfjaqktlacsusrc.png" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">Self Innovation</h3>

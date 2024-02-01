@@ -1,10 +1,10 @@
 .home_container {
     display: flex;
     justify-content: center;
-    height: 550px;
+    height: 700px;
     width: 85%;
     margin: auto;
-    margin-top: 5.5rem;
+    padding-top: 5.5rem;
     box-sizing: border-box;
     gap: 120px;
 }

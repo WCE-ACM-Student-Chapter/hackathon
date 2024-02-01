@@ -6,9 +6,9 @@ const Gallery = () => {
     const imageFiles = Array.from({ length: 10 }, (_, index) => index + 1);
 
     return (
-        <div className="gallery_container" id='gallery'>
+        <div className="gallery_container" id='gallery' data-aos="fade-up">
             <header>GALLERY</header>
-            <Carousel>
+            <Carousel data-aos="zoom-in-down">
                 {imageFiles.map((imageNumber) => (
                     <Carousel.Item key={imageNumber} interval={1000}>
                         <img

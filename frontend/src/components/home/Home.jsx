@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import Container from 'react-bootstrap/esm/Container'
 import './home.css'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -54,6 +54,7 @@ const Home = () => {
                     <div className='button_container'>
                         <button className='button' onClick={() => toggleTab(1)}>Participate</button>
                         <button className='button'>Become a Mentor</button>
+                        <button className='button'>Become a Sponsor</button>
                     </div>
                     <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
                         <div className="form_container">
@@ -62,7 +63,6 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='icons_container'>
-                        <FontAwesomeIcon icon={faDiscord} className='social_icons' />
                         <FontAwesomeIcon icon={faInstagram} className='social_icons' />
                         <FontAwesomeIcon icon={faXTwitter} className='social_icons' />
                         <FontAwesomeIcon icon={faLinkedinIn} className='social_icons' />
