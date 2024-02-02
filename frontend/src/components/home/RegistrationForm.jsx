@@ -5,30 +5,32 @@ import Swal from 'sweetalert2'
 import './form.css'
 
 const successToastMessage = () => {
-    console.log('Success Toast')
     Swal.fire({
         icon: 'success',
         title: 'Registration Successful!',
         text: 'Thank you for registering for the event!',
         footer: '<a href="/">Go to Home</a>'
-    })
+    }).then(function () {
+        window.location.href = '/';
+    });
 };
 
+const errorToastMessage = () => {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: '<a href="/">Go to Home</a>'
+    })
+}
+
 const RegistrationForm = () => {
-
-    const errorToastMessage = () => {
-        toast.error("Registration Unsuccessful! Try Again!", {
-            position: toast.POSITION.TOP_RIGHT,
-        });
-    };
-
     const [formData, setFormData] = useState({
         name: '',
         email: ''
     })
 
     const handleChange = (e) => {
-        const { name, value } = e.target
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
@@ -37,14 +39,20 @@ const RegistrationForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(formData)
-        await axios.post('https://wcehackathon-backend.vercel.app/api/v1/upload/signup', formData)
+
+        await axios.post('http://localhost:5000/api/v1/upload/signup', formData)
+            // await axios.post('https://wcehackathon-backend.vercel.app/api/v1/upload/signup', formData)
             .then(res => {
                 successToastMessage();
+                setFormData({
+                    name: '',
+                    email: ''
+                })
             })
             .catch(err => {
                 errorToastMessage();
             })
+
     }
 
     return (
