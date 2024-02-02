@@ -8,19 +8,30 @@ const successToastMessage = () => {
     Swal.fire({
         icon: 'success',
         title: 'Registration Successful!',
-        text: 'Thank you for registering for the event!',
-        footer: '<a href="/">Go to Home</a>'
+        html: 'Thank you for registering for the event! <br> Kindly check your mail for the Unstop link!',
+        footer: '<a href="/" style="color:black;">Go to Home</a>'
     }).then(function () {
         window.location.href = '/';
     });
 };
+
+const duplicateToastMessage = () => {
+    Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        html: 'You have already registered for the event! <br> Kindly check your mail',
+        footer: '<a href="/" style="color:black;">Go to Home</a>'
+    }).then(function () {
+        window.location.href = '/';
+    });
+}
 
 const errorToastMessage = () => {
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Something went wrong!',
-        footer: '<a href="/">Go to Home</a>'
+        footer: '<a href="/" style="color:black;">Go to Home</a>'
     })
 }
 
@@ -40,19 +51,18 @@ const RegistrationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+        // await axios.post('https://wcehackathon-backend.onrender.com/api/v1/upload/signup', formData)
         await axios.post('http://localhost:5000/api/v1/upload/signup', formData)
-            // await axios.post('https://wcehackathon-backend.vercel.app/api/v1/upload/signup', formData)
             .then(res => {
-                successToastMessage();
-                setFormData({
-                    name: '',
-                    email: ''
-                })
+                console.log(res.data.duplicate)
+                if (res.data.success) {
+                    successToastMessage()
+                } else if (res.data.duplicate) {
+                    duplicateToastMessage()
+                } else {
+                    errorToastMessage()
+                }
             })
-            .catch(err => {
-                errorToastMessage();
-            })
-
     }
 
     return (

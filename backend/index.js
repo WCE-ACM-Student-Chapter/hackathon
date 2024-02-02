@@ -1,4 +1,5 @@
 const express = require('express')
+const bodyParser = require("body-parser");
 const app = express();
 const cors = require('cors');
 
@@ -7,7 +8,8 @@ require('dotenv').config()
 // Middleware
 app.use(cors());
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 4000
 

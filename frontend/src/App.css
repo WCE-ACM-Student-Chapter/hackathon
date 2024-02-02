@@ -66,6 +66,7 @@ body {
 	background:
 		radial-gradient(circle farthest-side at 80% 40%, var(--container-color) 10%, var(--body-color) 40%);
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 	color: var(--text-color);
 	font-size: var(--normal-font-size);
 	scroll-behavior: smooth;

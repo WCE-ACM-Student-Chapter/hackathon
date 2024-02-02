@@ -7,9 +7,9 @@ exports.signup = async (req, res) => {
         const { name, email } = req.body
         const existUser = await User.findOne({ email });
         if (existUser) {
-            return res.status(400).json({
-                sucess: false,
-                message: "User already Exist",
+            return res.json({
+                success: false,
+                duplicate: true
             });
         }
 
@@ -33,26 +33,22 @@ exports.signup = async (req, res) => {
         };
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.log('Mail not sent')
-                res.status(500).json({
-                    sucess: false,
-                    message: "User registered but mail not sent!"
+                res.json({
+                    success: false,
+                    duplicate: false
                 })
             } else {
-                console.log('Mail sent successfully')
-                res.status(200).json({
+                res.json({
                     success: true,
-                    message: "Mail Sent Sucessfully"
+                    duplicate: false
                 })
             }
         });
 
     } catch (err) {
-        console.log(err)
-
-        return res.status(500).json({
-            sucess: false,
-            message: "User can't be registered try again"
+        return res.json({
+            success: false,
+            duplicate: false
         })
     }
 }
