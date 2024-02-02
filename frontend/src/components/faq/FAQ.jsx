@@ -4,7 +4,7 @@ import './faq.css';
 
 const FAQ = () => {
     return (
-        <div className='faq_container' id='faqs'>
+        <div className='faq_container' id='faqs' data-aos="fade-up">
             <header>FAQS</header>
             <Accordion data-bs-theme="dark">
                 {faqData.map((faq) => (

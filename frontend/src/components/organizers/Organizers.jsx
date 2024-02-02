@@ -3,7 +3,7 @@ import './organizers.css';
 
 const Organizers = () => {
     const contactPersons = [
-        { id: 1, name: "Dr. B. F. Momin", post: "", info: "WCE Sangli" },
+        { id: 1, name: "Dr. B. F. Momin", post: "Associate Professor", info: "WCE Sangli" },
         { id: 0, name: "Dr. P. G. Sonavane", post: "I/C Director", info: "WCE Sangli" },
         { id: 2, name: "Mrs. Dr. M. A. Shah", post: "HOD CSE", info: "Staff Advisor, WCE ACM Student Chapter" },
         { id: 4, name: "Ms. Sanika Patil", post: "Vice-Chairperson", info: "WCE ACM Student Chapter" },
@@ -12,12 +12,11 @@ const Organizers = () => {
     ];
 
     return (
-        <div className="contact_container" id="contact">
+        <div className="contact_container" id="contact" data-aos="fade-up">
             <header>ORGANIZERS</header>
             <div className="contact-persons">
-                {/* First Row */}
                 {contactPersons.map((person) => (
-                    <div className="person" key={person.id}>
+                    <div className="person" key={person.id} data-aos="zoom-out-up">
                         <p>{person.name}</p>
                         <p>{person.post}</p>
                         <p>{person.info}</p>

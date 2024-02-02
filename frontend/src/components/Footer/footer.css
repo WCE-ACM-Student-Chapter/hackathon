@@ -4,6 +4,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 5px;
 }
 
 footer img {
@@ -19,4 +20,22 @@ footer img {
 .copyright_text span {
 	font-family: var(--quicksand-font);
 	font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+	footer {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	footer img {
+		width: 80px;
+
+	}
+
+	.copyright_text {
+		text-align: center;
+		font-size: 14px;
+		gap: 0;
+	}
 }

@@ -45,6 +45,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    .faq_container {
+        width: 100%;
+    }
+
     .accordion-item {
         width: 100%;
         margin-inline: 0;

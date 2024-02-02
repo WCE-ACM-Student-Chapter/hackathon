@@ -1,5 +1,5 @@
-import './about.css';
 import React, { useState, useRef, useEffect } from 'react';
+import './about.css';
 
 const About = () => {
 	const videoRef = useRef(null);
@@ -22,7 +22,7 @@ const About = () => {
 	};
 
 	return (
-		<section id="about" data-aos="fade-up">
+		<div id="about" data-aos="fade-up">
 			<header>About Us</header>
 			<video
 				ref={videoRef}
@@ -35,7 +35,7 @@ const About = () => {
 			</video>
 			<p>WCE HACKATHON 24 will be conducted by WCE ACM Student Chapter. It is a developing venture in which participants are expected to complete the product development as per the selected problem statements.</p>
 
-		</section>
+		</div>
 	);
 };
 

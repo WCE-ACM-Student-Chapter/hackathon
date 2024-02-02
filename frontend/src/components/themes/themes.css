@@ -20,8 +20,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
     align-items: center;
+    padding: 30px;
     border-radius: 20px;
     width: 280px;
     height: 310px;
@@ -77,11 +77,11 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -91,7 +91,7 @@
     width: 500px;
     position: relative;
     background-color: #1e1c22;
-    padding: 4.5rem 2.5rem 2.5rem;
+    padding: 3.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
 }
 
@@ -119,13 +119,14 @@
 .services__modal-description {
     font-size: 16px;
     margin-bottom: var(--mb-1-5);
-    padding: 0 3.5rem;
+    padding: 0;
 }
 
 .services__modal-services {
     display: flex;
     flex-direction: column;
     gap: .75rem;
+    padding: 0;
 }
 
 .services__modal-service {
@@ -154,37 +155,41 @@
 }
 
 /* For medium devices */
-@media screen and (max-width: 768px) {
-    .services__container {
-        grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1000px) {
+
+    .services__modal {
+        padding: 0;
+    }
+
+    .services__modal-content {
+        width: 80%;
+        padding: 30px;
     }
 
     .services__content {
-        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+        margin: 20px;
+        width: 250px;
+    }
+
+    .services__content img {
+        height: 170px;
+    }
+
+    .services__modal-description {
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .services__modal-services {
+        padding: 0;
+        margin-top: 16px;
     }
 
     .services__icon {
         font-size: 1.5rem;
     }
-}
 
-@media screen and (max-width: 576px) {
-    .services__modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
-    }
-
-    .services__modal-description {
-        padding: 0;
-    }
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-    .services__container {
-        grid-template-columns: max-content;
-    }
-
-    .services__content {
-        padding-right: 6rem;
+    .services__modal-close {
+        top: 1.9rem;
     }
 }

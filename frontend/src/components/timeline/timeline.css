@@ -6,6 +6,8 @@
     align-items: center;
     flex-direction: column;
     font-family: var(--quicksand-font);
+    margin: auto;
+    width: 100%;
 }
 
 .outer {
@@ -15,7 +17,7 @@
 /* tcard container */
 .tcard {
     position: relative;
-    max-width: 450px;
+    width: 450px;
 }
 
 /* setting padding based on even or odd */
@@ -39,17 +41,9 @@
 .tcard:nth-child(odd)::before {
     left: 0px;
     top: 0px;
-    bottom: -9.5px;
+    bottom: -9.9px;
     border-width: 10px 0 10px 10px;
     border-radius: 50px 0 0 50px;
-}
-
-/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
-@media only screen and (max-width: 400px) {
-    .tcard:nth-child(odd)::before {
-        top: -5px;
-        bottom: -5px;
-    }
 }
 
 /* Setting the border of top, bottom, right */
@@ -141,4 +135,38 @@
 /* setting dot to the right if the tcard is odd */
 .tcard:nth-child(even)>.info>.heading::before {
     right: -78px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .timeline {
+        overflow: hidden;
+    }
+
+    .tcard {
+        width: 320px;
+    }
+
+    .tcard:nth-child(even)::before {
+        bottom: -10px;
+        top: -1px;
+    }
+
+    .tcard:nth-child(odd) {
+        padding: 40px 0 40px 40px;
+    }
+
+    .tcard:nth-child(even) {
+        padding: 40px 40px 40px 0;
+    }
+
+    .tcard:nth-child(odd)>.info>.heading::before {
+        left: -68px;
+    }
+
+    /* setting dot to the right if the tcard is odd */
+    .tcard:nth-child(even)>.info>.heading::before {
+        right: -68px;
+    }
+
 }

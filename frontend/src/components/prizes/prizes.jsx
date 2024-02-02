@@ -3,9 +3,9 @@ import './prizes.css';
 
 const Prizes = () => {
 	const prizesData = [
-		{ id: 1, icon: '🥇', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, hic facilis ut laboriosam nam explicabo omnis officia atque voluptates impedit.' },
-		{ id: 2, icon: '🥈', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, hic facilis ut laboriosam nam explicabo omnis officia atque voluptates impedit.' },
-		{ id: 3, icon: '🥉', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, hic facilis ut laboriosam nam explicabo omnis officia atque voluptates impedit.' },
+		{ id: 1, icon: '🥇', description: 'TO BE REVEALED SOON! STAY TUNED!' },
+		{ id: 2, icon: '🥈', description: 'TO BE REVEALED SOON! STAY TUNED!' },
+		{ id: 3, icon: '🥉', description: 'TO BE REVEALED SOON! STAY TUNED!' },
 	];
 
 	return (

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import Container from 'react-bootstrap/esm/Container'
 import './home.css'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import Countdown from '../countdown/countdown'
@@ -42,7 +41,7 @@ const Home = () => {
     }, []);
 
     return (
-        <Container className='home_container' id="home">
+        <div className='home_container' id="home">
             <div className="left_part">
                 <div className="title">
                     <div id='college'><span>WCE</span></div>
@@ -74,7 +73,7 @@ const Home = () => {
                 <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706690072/hackathon/o1vyqhxcv6yawv10gapw.png" alt="WCE Hackathon '24" />
                 <Countdown />
             </div>
-        </Container>
+        </div>
     )
 }
 

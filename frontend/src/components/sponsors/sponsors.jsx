@@ -2,27 +2,19 @@
 import React from 'react';
 import './sponsors.css';
 
-const SponsorCard = ({ name, description, logoSrc }) => (
-	<div className="sponsor-card">
-		<img src={logoSrc} alt={name} />
-		<h3>{name}</h3>
-		<p>{description}</p>
-	</div>
-);
-
 const Sponsors = () => {
-	const sponsorsData = [
-		{ logoSrc: 'https://res.cloudinary.com/dcevjlqv4/image/upload/v1706436395/hackathon/bbweainbgay4dqtlmeyy.png' },
-		{ logoSrc: 'https://res.cloudinary.com/dcevjlqv4/image/upload/v1706436395/hackathon/bbweainbgay4dqtlmeyy.png' },
-		{ logoSrc: 'https://res.cloudinary.com/dcevjlqv4/image/upload/v1706436395/hackathon/bbweainbgay4dqtlmeyy.png' },
-	];
+	const sponsorCount = 4;
+	const sponsorBaseUrl = 'https://res.cloudinary.com/dcevjlqv4/image/upload/v1706865741/hackathon/Sponsors/';
+
 
 	return (
-		<div className="sponsors-container" id='sponsors'>
-			<header>Sponsors</header>
+		<div className="sponsors-container" id='sponsors' data-aos="fade-up">
+			<header>Previous Sponsors</header>
 			<div className="sponsors-list">
-				{sponsorsData.map((sponsor) => (
-					<SponsorCard key={sponsor.logoSrc} {...sponsor} />
+				{Array.from({ length: sponsorCount }, (_, index) => (
+					<div key={index} className="sponsor-card" data-aos="zoom-in">
+						<img src={`${sponsorBaseUrl}${index + 1}${index + 1}.png`} alt={`Sponsor ${index + 1}`} />
+					</div>
 				))}
 			</div>
 		</div>

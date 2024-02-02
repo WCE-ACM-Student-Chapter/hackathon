@@ -17,7 +17,7 @@
 	border-radius: 20px;
 	padding: 20px;
 	margin: 20px;
-	max-width: 330px;
+	max-width: 300px;
 	width: 100%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
@@ -49,12 +49,12 @@
 
 .circle {
 	position: relative;
-    width: 120%;
-    height: 100%;
-	margin-top: -170px;
+	width: 120%;
+	height: 100%;
+	margin-top: -180px;
 	border-radius: 999px;
-    background: #232323;
-    text-align: center;
+	background: #232323;
+	text-align: center;
 	flex-shrink: 0;
 }
 
@@ -67,12 +67,19 @@
 .prize-card .description {
 	margin-top: 25px;
 	font-family: var(--quicksand-font);
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 18px;
 	padding: 0 10px;
 }
 
 /* For small devices */
 @media screen and (max-width: 1000px) {
-	
+	.prizes-list {
+		gap: 15px;
+	}
+
+	.prize-card {
+		max-width: 75%;
+		height: 390px;
+	}
 }

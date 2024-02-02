@@ -4,7 +4,7 @@
     align-items: center;
     margin: 0 auto;
     justify-content: center;
-    width: 50%;
+    width: 45%;
     padding: 80px 0;
 }
 
@@ -25,7 +25,7 @@
 
 /* For small devices */
 @media screen and (max-width: 1000px) {
-	.gallery_container {
-        width: 90%;
+    .gallery_container {
+        width: 85%;
     }
 }

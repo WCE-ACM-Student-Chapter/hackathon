@@ -8,8 +8,40 @@ form {
     padding: 40px 60px;
 }
 
+form label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form input {
+    font-weight: 500;
+}
+
 @media screen and (max-width: 1000px) {
     form {
-        width: 80vw;
+        width: 350px;
+        padding: 30px 30px;
     }
+
+    form header {
+        font-size: 1.5rem;
+    }
+
+    .form-close {
+        font-size: 18px;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.2rem !important;
+    }
+
+    form input {
+        font-size: 16px;
+    }
+
+    form button {
+        margin: auto;
+        margin-top: 30px;
+    }
+
 }
