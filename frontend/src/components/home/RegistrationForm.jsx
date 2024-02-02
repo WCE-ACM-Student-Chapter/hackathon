@@ -4,7 +4,7 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 import './form.css'
 
-const successToastMessage = () => { 
+const successToastMessage = () => {
     console.log('Success Toast')
     Swal.fire({
         icon: 'success',
@@ -38,7 +38,7 @@ const RegistrationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         console.log(formData)
-        await axios.post('http://localhost:5000/api/v1/upload/signup', formData)
+        await axios.post('https://wcehackathon-backend.vercel.app/api/v1/upload/signup', formData)
             .then(res => {
                 successToastMessage();
             })
