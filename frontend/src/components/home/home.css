@@ -151,8 +151,9 @@
 
     .home_container {
         flex-direction: column-reverse;
-        height: 100vh;
-        align-items: center;
+        padding-bottom: 80px;
+        height: fit-content;
+        margin-top: 70px;
         gap: 50px;
     }
 
@@ -184,12 +185,12 @@
 
     #year {
         margin-top: -15px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     #college {
         margin-bottom: -15px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     #tagline {
@@ -205,6 +206,6 @@
     }
 
     .social_icons {
-        height: 18px;
+        height: 22px;
     }
 }

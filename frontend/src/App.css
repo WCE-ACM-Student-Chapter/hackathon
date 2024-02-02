@@ -83,8 +83,11 @@ body {
 	-webkit-appearance: none;
 }
 
-a {
+a,
+a:visited,
+a:active {
 	text-decoration: none;
+	color: white;
 }
 
 li {
@@ -164,4 +167,12 @@ header:hover {
 
 #root {
 	width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		background:
+			radial-gradient(circle farthest-side at 50% 50%, var(--container-color) 30%, var(--body-color) 80%);
+		background-attachment: fixed;
+	}
 }

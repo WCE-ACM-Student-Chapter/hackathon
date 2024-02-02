@@ -168,11 +168,13 @@
 
     .services__content {
         margin: 20px;
-        width: 250px;
+        width: 230px;
+        gap: 10px;
+        height: fit-content;
     }
 
     .services__content img {
-        height: 170px;
+        height: 150px;
     }
 
     .services__modal-description {

@@ -19,7 +19,7 @@ form input {
 
 @media screen and (max-width: 1000px) {
     form {
-        width: 350px;
+        width: 80vw;
         padding: 30px 30px;
     }
 

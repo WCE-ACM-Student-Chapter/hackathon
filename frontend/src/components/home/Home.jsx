@@ -62,10 +62,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='icons_container'>
-                        <FontAwesomeIcon icon={faInstagram} className='social_icons' />
-                        <FontAwesomeIcon icon={faXTwitter} className='social_icons' />
-                        <FontAwesomeIcon icon={faLinkedinIn} className='social_icons' />
-                        <FontAwesomeIcon icon={faEnvelope} className='social_icons' />
+                        <a href=""><FontAwesomeIcon icon={faInstagram} className='social_icons' /></a>
+                        <a href=""><FontAwesomeIcon icon={faXTwitter} className='social_icons' /></a>
+                        <a href=""><FontAwesomeIcon icon={faLinkedinIn} className='social_icons' /></a>
+                        <a href=""><FontAwesomeIcon icon={faEnvelope} className='social_icons' /></a>
                     </div>
                 </div>
             </div>

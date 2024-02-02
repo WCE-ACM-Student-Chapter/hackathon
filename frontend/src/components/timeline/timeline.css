@@ -144,12 +144,12 @@
     }
 
     .tcard {
-        width: 320px;
+        width: 300px;
     }
 
     .tcard:nth-child(even)::before {
         bottom: -10px;
-        top: -1px;
+        top: -0.5px;
     }
 
     .tcard:nth-child(odd) {
