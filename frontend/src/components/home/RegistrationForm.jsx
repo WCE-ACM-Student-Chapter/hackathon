@@ -51,8 +51,7 @@ const RegistrationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        // await axios.post('https://wcehackathon-backend.onrender.com/api/v1/upload/signup', formData)
-        await axios.post('http://localhost:5000/api/v1/upload/signup', formData)
+        await axios.post('https://wcehackathon-backend.onrender.com/api/v1/upload/signup', formData)
             .then(res => {
                 console.log(res.data.duplicate)
                 if (res.data.success) {
