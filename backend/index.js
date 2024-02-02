@@ -5,7 +5,13 @@ const cors = require('cors');
 require('dotenv').config()
 
 // Middleware
-app.use(cors());
+app.use(cors(
+    {
+        origin: [process.env.CLIENT_URL],
+        methods: ['GET', 'POST'],
+        credentials: true
+    }
+));
 app.use(express.json())
 
 //for interacting with files by express express-fileupload
