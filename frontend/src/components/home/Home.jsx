@@ -62,10 +62,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='icons_container'>
-                        <a href=""><FontAwesomeIcon icon={faInstagram} className='social_icons' /></a>
-                        <a href=""><FontAwesomeIcon icon={faXTwitter} className='social_icons' /></a>
-                        <a href=""><FontAwesomeIcon icon={faLinkedinIn} className='social_icons' /></a>
-                        <a href=""><FontAwesomeIcon icon={faEnvelope} className='social_icons' /></a>
+                        <a href="https://www.instagram.com/wce_acm/" target='blank'><FontAwesomeIcon icon={faInstagram} className='social_icons' /></a>
+                        <a href="https://twitter.com/wce_acm" target='blank'><FontAwesomeIcon icon={faXTwitter} className='social_icons' /></a>
+                        <a href="https://www.linkedin.com/company/wce-acm-student-chapter/mycompany/" target='blank'><FontAwesomeIcon icon={faLinkedinIn} className='social_icons' /></a>
+                        <a href="mailto:wceacmsc@gmail.com" target='blank'><FontAwesomeIcon icon={faEnvelope} className='social_icons' /></a>
                     </div>
                 </div>
             </div>
