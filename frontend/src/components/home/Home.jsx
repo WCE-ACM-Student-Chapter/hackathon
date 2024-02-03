@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faXTwitter, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import './home.css'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import Countdown from '../countdown/countdown'
@@ -62,6 +62,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='icons_container'>
+                        <a href="https://www.youtube.com/@wceacm?sub_confirmation=1" target='blank'><FontAwesomeIcon icon={faYoutube} className='social_icons' /></a>
                         <a href="https://www.instagram.com/wce_acm/" target='blank'><FontAwesomeIcon icon={faInstagram} className='social_icons' /></a>
                         <a href="https://twitter.com/wce_acm" target='blank'><FontAwesomeIcon icon={faXTwitter} className='social_icons' /></a>
                         <a href="https://www.linkedin.com/company/wce-acm-student-chapter/mycompany/" target='blank'><FontAwesomeIcon icon={faLinkedinIn} className='social_icons' /></a>

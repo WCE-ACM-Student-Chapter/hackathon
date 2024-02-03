@@ -37,6 +37,11 @@
     color: white;
 }
 
+.accordion-body p {
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .accordion {
