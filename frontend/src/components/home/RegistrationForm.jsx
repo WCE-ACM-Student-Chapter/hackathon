@@ -76,7 +76,10 @@ const RegistrationForm = () => {
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" name="email" placeholder="Enter email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter valid email address" required autoComplete="off" value={formData.email} onChange={handleChange} />
                 </Form.Group>
-                <button type='submit' className='center'>Submit</button>
+                <div className="form_button_container">
+                    <button type='submit'>Submit</button>
+                    <button type='button'>Register at Unstop</button>
+                </div>
             </Form>
         </div>
     )

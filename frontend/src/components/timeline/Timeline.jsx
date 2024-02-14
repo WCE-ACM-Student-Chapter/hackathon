@@ -8,16 +8,23 @@ const Timeline = () => {
             <div className="outer">
                 <div className="tcard">
                     <div className="info" data-aos="fade-left">
-                        <div className="date">10th Feb 12:00 AM</div>
+                        <div className="date">14th Feb 12:00 AM</div>
                         <div className="heading">Registration Starts</div>
-                        <p>Register yourself at Unstop by submitting your details.</p>
+                        <p>Register yourself at Unstop by submitting your idea.</p>
                     </div>
                 </div>
                 <div className="tcard">
                     <div className="info" data-aos="fade-right">
-                        <div className="date">25th Feb 11:59 PM</div>
+                        <div className="date">1st Mar 12:00 AM</div>
                         <div className="heading">Registration Ends</div>
                         <p>We'll review your application and will let you know.</p>
+                    </div>
+                </div>
+                <div className="tcard">
+                    <div className="info" data-aos="fade-left">
+                        <div className="date">6th Mar 10:00 AM</div>
+                        <div className="heading">Round 1 Results</div>
+                        <p>Know the shortlisted ideas for Round 2.</p>
                     </div>
                 </div>
                 <div className="tcard">

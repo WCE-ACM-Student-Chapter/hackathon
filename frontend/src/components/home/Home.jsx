@@ -52,11 +52,10 @@ const Home = () => {
                     <div className='info_container'><span id='info'></span></div>
                     <div className='button_container'>
                         <button className='button' onClick={() => toggleTab(1)}>Participate</button>
-                        <button className='button'>Become a Mentor</button>
-                        <button className='button'>Become a Sponsor</button>
+                        <a href="https://forms.gle/rW6U1v2Tim3FUyW78" target='_blank'><button className='button'>Become a Mentor</button></a>
                     </div>
                     <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
-                        <div className="form_container">
+                        <div className="form_container" onBlur={() => toggleTab(0)} >
                             <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="form-close" />
                             <RegistrationForm />
                         </div>

@@ -19,13 +19,13 @@ const FAQ = () => {
                     <Accordion.Header>Contact Information</Accordion.Header>
                     <Accordion.Body>
                         <p>
-                            For queries contact :
+                            For queries contact
                             <br />
-                            Viraj Takone - +917420098224
+                            Viraj Takone: +91 7420098224
                             <br />
-                            Vaibhav Fulmali - +918530084596
+                            Vaibhav Fulmali: +91 8530084596
                             <br />
-                            Sanika Patil : +919423236973
+                            Sanika Patil: +91 9423236973
                         </p>
                         <p>
                             You can also reach us by email at <br />

@@ -8,7 +8,7 @@ const Gallery = () => {
     return (
         <div className="gallery_container" id='gallery' data-aos="fade-up">
             <header>GALLERY</header>
-            <Carousel data-aos="zoom-in-down">
+            <Carousel>
                 {imageFiles.map((imageNumber) => (
                     <Carousel.Item key={imageNumber} interval={1000}>
                         <img

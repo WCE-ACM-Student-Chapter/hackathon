@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 
 const connectDb = () => {
-    mongoose.connect(process.env.DATABASE_URL).then(
+    mongoose.connect(process.env.DATABASE_URL, { dbName: 'hackathon24' }).then(
         () => {
             console.log("Connected To DB")
         }).catch(

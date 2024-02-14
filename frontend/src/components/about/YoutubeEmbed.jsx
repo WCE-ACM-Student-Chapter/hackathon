@@ -1,7 +1,7 @@
 import React from "react";
 
 const YoutubeEmbed = () => (
-    <div className="video-responsive">
+    <div className="video-responsive" data-aos='fade-up'>
         <iframe
             src="https://www.youtube.com/embed/yqIgRNFX8pM"
             frameBorder="0"

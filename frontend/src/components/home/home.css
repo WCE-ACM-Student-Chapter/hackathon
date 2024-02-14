@@ -104,7 +104,7 @@
 }
 
 .social_icons:hover {
-    color: var(--title-color-dark);
+    color: rgb(255, 245, 203);
     transform: scale(1.2);
 }
 
@@ -142,6 +142,13 @@
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #000000);
     width: 350px;
+}
+
+.form_button_container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -207,5 +214,15 @@
 
     .social_icons {
         height: 22px;
+    }
+
+    .form_button_container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .form_button_container button {
+        font-size: .9rem;
+        margin: 0;
     }
 }

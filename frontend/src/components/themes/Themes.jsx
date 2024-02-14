@@ -15,9 +15,9 @@ const Themes = () => {
 
             <div className="services__container container grid">
                 <div className="services__content" data-aos="zoom-in-right">
-                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615898/hackathon/Theme%20Icons/twoemik5kromlkb5i1vb.png" alt="" />
+                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1707887439/hackathon/Theme%20Icons/i1rqpmxkpss0eo6lk0ao.png" alt="" />
                     <div className='services__title-container'>
-                        <h3 className="services__title">AI - ML</h3>
+                        <h3 className="services__title">AR-VR Innovations</h3>
                         <span className="services__button" onClick={() => toggleTab(1)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
 
@@ -137,7 +137,7 @@ const Themes = () => {
                 <div className="services__content" data-aos="zoom-in-right">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615886/hackathon/Theme%20Icons/ojbtu3a4bxxsthzzvnwi.webp" alt="" />
                     <div className='services__title-container'>
-                        <h3 className="services__title">Agriculture</h3>
+                        <h3 className="services__title">Smart Agriculture</h3>
                         <span className="services__button" onClick={() => toggleTab(4)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
 
@@ -175,9 +175,9 @@ const Themes = () => {
                 </div>
 
                 <div className="services__content" data-aos="zoom-in-up">
-                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706692286/hackathon/Theme%20Icons/wppxo3pbojdlsxfzc3ff.png" alt="" />
+                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1707888302/hackathon/Theme%20Icons/tnxzxtyrdkpjlpcvbdjo.png" alt="" />
                     <div className='services__title-container'>
-                        <h3 className="services__title">Environment</h3>
+                        <h3 className="services__title">Education</h3>
                         <span className="services__button" onClick={() => toggleTab(5)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
 
@@ -215,14 +215,134 @@ const Themes = () => {
                 </div>
 
                 <div className="services__content" data-aos="zoom-in-left">
-                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691940/hackathon/Theme%20Icons/ot3pydfjaqktlacsusrc.png" alt="" />
+                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1707887924/hackathon/Theme%20Icons/v98frmihzztvm2squecx.png" alt="" />
                     <div className='services__title-container'>
-                        <h3 className="services__title">Self Innovation</h3>
+                        <h3 className="services__title">Fintech</h3>
                         <span className="services__button" onClick={() => toggleTab(6)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
 
                 </div>
                 <div className={toggleState === 6 ? "services__modal active-modal" : "services__modal"}>
+                    <div className="services__modal-content">
+                        <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
+
+                        <h3 className="services__modal-title">Tab 4</h3>
+                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+
+                        <ul className="services__modal-services grid">
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I develop the user interface.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Web page development.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I create ux element interactions.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I position your company brand.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="services__content" data-aos="zoom-in-right">
+                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1707887549/hackathon/Theme%20Icons/k4a6olyemqlf0zgopq5s.png" alt="" />
+                    <div className='services__title-container'>
+                        <h3 className="services__title">Cybersecurity</h3>
+                        <span className="services__button" onClick={() => toggleTab(7)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
+                    </div>
+
+                </div>
+                <div className={toggleState === 7 ? "services__modal active-modal" : "services__modal"}>
+                    <div className="services__modal-content">
+                        <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
+
+                        <h3 className="services__modal-title">Tab 4</h3>
+                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+
+                        <ul className="services__modal-services grid">
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I develop the user interface.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Web page development.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I create ux element interactions.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I position your company brand.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="services__content" data-aos="zoom-in-right">
+                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1707887819/hackathon/Theme%20Icons/kjc3shoojxwoz62btoo5.png" alt="" />
+                    <div className='services__title-container'>
+                        <h3 className="services__title">Digital Twin</h3>
+                        <span className="services__button" onClick={() => toggleTab(8)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
+                    </div>
+
+                </div>
+                <div className={toggleState === 8 ? "services__modal active-modal" : "services__modal"}>
+                    <div className="services__modal-content">
+                        <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
+
+                        <h3 className="services__modal-title">Tab 4</h3>
+                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+
+                        <ul className="services__modal-services grid">
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I develop the user interface.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Web page development.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I create ux element interactions.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">I position your company brand.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="services__content" data-aos="zoom-in-left">
+                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691940/hackathon/Theme%20Icons/ot3pydfjaqktlacsusrc.png" alt="" />
+                    <div className='services__title-container'>
+                        <h3 className="services__title">Open Innovation</h3>
+                        <span className="services__button" onClick={() => toggleTab(9)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
+                    </div>
+
+                </div>
+                <div className={toggleState === 9 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 

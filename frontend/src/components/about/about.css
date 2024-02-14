@@ -8,15 +8,31 @@
 	align-items: center;
 }
 
+#about .about_container {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	width: 95%;
+}
+
+#about span {
+	font-family: 'IntegralCF-Bold', sans-serif;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+#about div {
+	margin-top: 30px;
+}
+
 #about p {
-	margin-top: 40px;
-	font-size: 20px;
+	font-size: 16px;
 	color: #fff;
 	font-family: var(--quicksand-font);
 	font-weight: 500;
 	line-height: 1.5;
-	text-align: center;
-	width: 95%;
+	text-align: justify;
 }
 
 .video-responsive {
@@ -38,20 +54,23 @@
 	position: absolute;
 }
 
-
-
 @media screen and (max-width: 1000px) {
 	#about {
 		width: 85%;
 	}
 
+
 	.video-responsive {
 		width: 100%;
 	}
 
-	#about p {
+	#about span {
 		font-size: 18px;
-		line-height: 1.6;
+	}
+
+	#about p {
+		font-size: 16px;
+		line-height: 1.4;
 		text-align: justify;
 		width: 97%;
 	}

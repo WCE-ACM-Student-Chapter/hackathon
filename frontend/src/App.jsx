@@ -14,22 +14,32 @@ import Organizers from './components/organizers/Organizers.jsx';
 import Gallery from './components/gallery/Gallery.jsx';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
+import Loader from './components/loader/Loader.jsx';
 
 const App = () => {
+	const [isLoading, setIsLoading] = React.useState(true);
+
 	useEffect(() => {
 		AOS.init();
+
+		window.onload = () => {
+			setIsLoading(false);
+		};
+
+		return () => window.onload = null;
 	}, []);
 
 	return (
 		<>
+			{isLoading ? <Loader /> : null}
 			<Header />
 			<Home />
 			<About />
 			<Timeline />
 			<Themes />
 			<Prizes />
-			<Gallery />
 			<Sponsors />
+			<Gallery />
 			<Organizers />
 			<FAQ />
 			<Footer />

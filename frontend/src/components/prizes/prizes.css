@@ -72,6 +72,42 @@
 	padding: 0 10px;
 }
 
+.main_prize {
+	display: flex;
+	height: 100%;
+	width: fit-content;
+	justify-content: center;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.main_prize p {
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-family: 'IntegralCF-Regular', sans-serif;
+	line-height: 1;
+}
+
+.main_prize strong {
+	font-weight: 500;
+	font-family: var(--raleway-font);
+	font-size: 18px;
+}
+
+.money {
+	font-family: 'IntegralCF-Bold', sans-serif;
+	font-size: 47px;
+	word-spacing: 100vw;
+	line-height: 1.2;
+	letter-spacing: 1px;
+}
+
+#prize_info {
+	font-size: 20px;
+	font-family: var(--raleway-font);
+	margin-top: -30px;
+}
+
 /* For small devices */
 @media screen and (max-width: 1000px) {
 	.prizes-list {
@@ -81,5 +117,11 @@
 	.prize-card {
 		max-width: 70%;
 		height: 390px;
+	}
+
+	#prize_info {
+		margin-top: 0;
+		width: 72%;
+		font-size: 18px;
 	}
 }
