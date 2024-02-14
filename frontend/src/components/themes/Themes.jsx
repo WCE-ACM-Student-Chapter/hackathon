@@ -20,35 +20,29 @@ const Themes = () => {
                         <h3 className="services__title">AR-VR Innovations</h3>
                         <span className="services__button" onClick={() => toggleTab(1)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
-
                 </div>
                 <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 1</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">AR-VR Innovations</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop immersive educational experiences using AR/VR technology.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Create virtual tours for historical sites or museums with interactive elements.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Build augmented reality games that blend digital content with the real world.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design AR/VR solutions for training and simulations in various industries like healthcare or manufacturing and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -60,35 +54,29 @@ const Themes = () => {
                         <h3 className="services__title">Health Care</h3>
                         <span className="services__button" onClick={() => toggleTab(2)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
-
                 </div>
                 <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 2</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Health Care</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop a telemedicine platform for remote consultations and healthcare monitoring.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Build a wearable device for continuous health monitoring and early detection of medical conditions.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Create a machine learning-based diagnostic tool for analyzing medical images like X-rays or MRIs.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design a health management app for tracking fitness goals, medication reminders, and dietary habits and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -100,35 +88,29 @@ const Themes = () => {
                         <h3 className="services__title">Renewable Energy</h3>
                         <span className="services__button" onClick={() => toggleTab(3)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
-
                 </div>
                 <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 3</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Renewable Energy</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop a smart energy management system to optimize renewable energy usage.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Build a portable solar-powered device for charging electronic devices.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Create a system for monitoring and optimizing energy efficiency in buildings.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design a wind turbine monitoring system using IoT sensors for predictive maintenance and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -140,35 +122,29 @@ const Themes = () => {
                         <h3 className="services__title">Smart Agriculture</h3>
                         <span className="services__button" onClick={() => toggleTab(4)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
-
                 </div>
                 <div className={toggleState === 4 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 4</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Smart Agriculture</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop a predictive analytics tool using machine learning to optimize crop yields.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Build an IoT-based smart irrigation system for efficient water usage in agriculture.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Create a drone-based monitoring system for crop health assessment.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design a mobile application for farmers to remotely monitor and control farm equipment and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -186,29 +162,24 @@ const Themes = () => {
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 4</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Education</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop educational games for teaching various subjects such as mathematics, science, or language.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Build a gamified learning platform with personalized learning paths for students.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Create interactive simulations for historical events or scientific experiments.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design multiplayer educational games for collaborative learning experiences and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -220,35 +191,29 @@ const Themes = () => {
                         <h3 className="services__title">Fintech</h3>
                         <span className="services__button" onClick={() => toggleTab(6)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
-
                 </div>
                 <div className={toggleState === 6 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 4</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Fintech</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop a blockchain-based solution for secure and transparent financial transactions.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Build a mobile banking application with advanced security features like biometric authentication.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Create a predictive analytics tool for fraud detection and prevention in banking transactions.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design a chatbot for customer support and financial advisory services and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -263,32 +228,27 @@ const Themes = () => {
 
                 </div>
                 <div className={toggleState === 7 ? "services__modal active-modal" : "services__modal"}>
-                    <div className="services__modal-content">
+                    <div className="services__modal-content" onBlur={() => toggleTab(0)}>
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 4</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Cybersecurity</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop a threat detection and prevention system for network security.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Build a secure data encryption and decryption solution for sensitive information.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Create a system for identity and access management with biometric authentication.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design a cybersecurity training platform with gamified learning modules and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -306,29 +266,24 @@ const Themes = () => {
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 4</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Digital Twin</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Develop a digital twin platform for predictive maintenance in manufacturing or infrastructure.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Build a virtual modeling and simulation environment for testing IoT devices.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Create a digital twin for smart cities to optimize urban planning and resource management.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
-                            </li>
-                            <li className="services__modal-service">
-                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Design a real-time monitoring and control system using digital twin technology for industrial processes and much more.</p>
                             </li>
                         </ul>
                     </div>
@@ -346,25 +301,24 @@ const Themes = () => {
                     <div className="services__modal-content">
                         <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
-                        <h3 className="services__modal-title">Tab 4</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
+                        <h3 className="services__modal-title">Open Innovation</h3>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I develop the user interface.</p>
+                                <p className="services__modal-info">Only for Novice Track.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Develop innovative solutions that address environmental sustainability challenges.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">hHrness the power of technology for social impact by addressing societal issues, promoting inclusivity, or improving the well-being of communities.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">I position your company brand.</p>
+                                <p className="services__modal-info">Develop projects that showcase the collaborative potential of humans and AI working together.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />

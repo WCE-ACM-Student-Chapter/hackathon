@@ -4,14 +4,10 @@ import { faInstagram, faXTwitter, faLinkedinIn, faYoutube } from '@fortawesome/f
 import './home.css'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import Countdown from '../countdown/countdown'
-import RegistrationForm from './RegistrationForm'
+import RegistrationForm from '../contact/RegistrationForm'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
-    const [toggleState, setToggleState] = useState(0);
-    const toggleTab = (index) => {
-        setToggleState(index);
-    }
 
     useEffect(() => {
         var dataText = ["Battle of Development.", "Win Amazing Prizes.", "Separate Tracks.", "Novice and Expert."];
@@ -47,18 +43,11 @@ const Home = () => {
                     <div id='college'><span>WCE</span></div>
                     <span id='main_title'>HACKATHON</span>
                     <div id='year'><span>16-17 MAR 24</span></div>
-                    {/* <div id="tagline">IDEATE | BUILD | DEPLOY</div> */}
                     <div id="tagline">CODE | CREATE | CONQUER</div>
                     <div className='info_container'><span id='info'></span></div>
                     <div className='button_container'>
-                        <a href="https://unstop.com/p/wce-hackathon-2024-walchand-college-of-engineering-wce-sangli-898730" target='_blank'><button className='button'>Participate</button></a>
+                        <a href="https://unstop.com/p/wce-hackathon-2024-walchand-college-of-engineering-wce-sangli-898730" target='_blank'><button className='button'>Register Now</button></a>
                         <a href="https://forms.gle/rW6U1v2Tim3FUyW78" target='_blank'><button className='button'>Become a Mentor</button></a>
-                    </div>
-                    <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
-                        <div className="form_container">
-                            <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="form-close" />
-                            <RegistrationForm />
-                        </div>
                     </div>
                     <div className='icons_container'>
                         <a href="https://www.youtube.com/@wceacm?sub_confirmation=1" target='blank'><FontAwesomeIcon icon={faYoutube} className='social_icons' /></a>

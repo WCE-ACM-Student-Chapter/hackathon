@@ -43,7 +43,7 @@ exports.signup = async (req, res) => {
                     Submission Template attached here.
                     <br>
                     <br>
-                    Unstop Link: <a href=""></a>
+                    Unstop Link: <a href="https://bit.ly/wcehackathon24unstop">https://bit.ly/wcehackathon24unstop</a>
                     <br>
                     Brochure: <a href=""></a>
                     <br>

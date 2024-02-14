@@ -65,9 +65,9 @@ const RegistrationForm = () => {
     }
 
     return (
-        <div>
+        <div data-aos="fade-up">
             <Form onSubmit={handleSubmit} id='form' method='post'>
-                <header className='center'>REGISTER NOW</header>
+                <header className='center'>CONNECT WITH US</header>
                 <Form.Group className="mb-4" controlId="formBasicPassword">
                     <Form.Label className="mt-4">Name</Form.Label>
                     <Form.Control type="text" name="name" placeholder="Enter name" title="Enter your name" required autoComplete="off" value={formData.name} onChange={handleChange} />

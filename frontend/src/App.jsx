@@ -15,6 +15,7 @@ import Gallery from './components/gallery/Gallery.jsx';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Loader from './components/loader/Loader.jsx';
+import RegistrationForm from './components/contact/RegistrationForm.jsx';
 
 const App = () => {
 	const [isLoading, setIsLoading] = React.useState(true);
@@ -37,6 +38,7 @@ const App = () => {
 			<Gallery />
 			<Organizers />
 			<FAQ />
+			<RegistrationForm />
 			<Footer />
 		</>
 	);

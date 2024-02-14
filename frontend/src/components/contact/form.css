@@ -1,11 +1,13 @@
 form {
     font-family: var(--quicksand-font);
-    width: 50vw;
+    margin: auto;
     font-size: 18px;
-    background-color: #1e1c22;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 40px 60px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 form label {
@@ -16,6 +18,20 @@ form label {
 form input {
     font-weight: 500;
 }
+
+form div {
+    width: 40vw !important;
+    ;
+}
+
+.form_button_container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
 
 @media screen and (max-width: 1000px) {
     form {
@@ -42,6 +58,17 @@ form input {
     form button {
         margin: auto;
         margin-top: 30px;
+    }
+
+
+    .form_button_container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .form_button_container button {
+        font-size: .9rem;
+        margin: 0;
     }
 
 }
