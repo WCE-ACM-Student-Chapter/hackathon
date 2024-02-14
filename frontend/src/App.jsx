@@ -21,12 +21,7 @@ const App = () => {
 
 	useEffect(() => {
 		AOS.init();
-
-		window.onload = () => {
-			setIsLoading(false);
-		};
-
-		return () => window.onload = null;
+		setIsLoading(false);
 	}, []);
 
 	return (
