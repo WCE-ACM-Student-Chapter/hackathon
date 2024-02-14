@@ -51,7 +51,7 @@ const Home = () => {
                     <div id="tagline">CODE | CREATE | CONQUER</div>
                     <div className='info_container'><span id='info'></span></div>
                     <div className='button_container'>
-                        <button className='button' onClick={() => toggleTab(1)}>Participate</button>
+                        <a href="https://unstop.com/p/wce-hackathon-2024-walchand-college-of-engineering-wce-sangli-898730" target='_blank'><button className='button'>Participate</button></a>
                         <a href="https://forms.gle/rW6U1v2Tim3FUyW78" target='_blank'><button className='button'>Become a Mentor</button></a>
                     </div>
                     <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
