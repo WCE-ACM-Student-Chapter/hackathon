@@ -78,7 +78,7 @@ const RegistrationForm = () => {
                 </Form.Group>
                 <div className="form_button_container">
                     <button type='submit'>Submit</button>
-                    <button type='button'>Register at Unstop</button>
+                    <a href="https://bit.ly/wcehackathon24unstop" target='_blank'><button type='button'>Register at Unstop</button></a>x
                 </div>
             </Form>
         </div>
