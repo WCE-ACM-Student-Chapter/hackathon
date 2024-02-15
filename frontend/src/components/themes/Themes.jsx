@@ -275,7 +275,7 @@ const Themes = () => {
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">Build a virtual modeling and simulation environment for testing IoT devices.</p>
+                                <p className="services__modal-info">Build a virtual modelling and simulation environment for testing IoT devices.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
@@ -299,7 +299,7 @@ const Themes = () => {
                 </div>
                 <div className={toggleState === 9 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
-                        <FontAwesomeIcmodellingck={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
+                        <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
                         <h3 className="services__modal-title">Open Innovation</h3>
 
@@ -314,7 +314,7 @@ const Themes = () => {
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
-                                <p className="services__modal-info">hHrness the power of technology for social impact by addressing societal issues, promoting inclusivity, or improving the well-being of communities.</p>
+                                <p className="services__modal-info">Harness the power of technology for social impact by addressing societal issues, promoting inclusivity, or improving the well-being of communities.</p>
                             </li>
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
