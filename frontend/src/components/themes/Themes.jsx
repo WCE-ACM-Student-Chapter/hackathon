@@ -299,7 +299,7 @@ const Themes = () => {
                 </div>
                 <div className={toggleState === 9 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
-                        <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
+                        <FontAwesomeIcmodellingck={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
 
                         <h3 className="services__modal-title">Open Innovation</h3>
 
@@ -328,6 +328,8 @@ const Themes = () => {
                     </div>
                 </div>
             </div>
+
+            <span>The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</span>
         </div>
     )
 }
