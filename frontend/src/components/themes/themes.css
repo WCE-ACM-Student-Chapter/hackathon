@@ -183,3 +183,8 @@
         top: 1.9rem;
     }
 }
+
+#novice {
+    font-family: var(--raleway-font);
+    color: rgb(205, 205, 205);
+}

@@ -44,6 +44,10 @@ const Themes = () => {
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design AR/VR solutions for training and simulations in various industries like healthcare or manufacturing and much more.</p>
                             </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -77,6 +81,10 @@ const Themes = () => {
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design a health management app for tracking fitness goals, medication reminders, and dietary habits and much more.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
                             </li>
                         </ul>
                     </div>
@@ -112,6 +120,10 @@ const Themes = () => {
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design a wind turbine monitoring system using IoT sensors for predictive maintenance and much more.</p>
                             </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -145,6 +157,10 @@ const Themes = () => {
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design a mobile application for farmers to remotely monitor and control farm equipment and much more.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
                             </li>
                         </ul>
                     </div>
@@ -181,6 +197,10 @@ const Themes = () => {
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design multiplayer educational games for collaborative learning experiences and much more.</p>
                             </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -214,6 +234,10 @@ const Themes = () => {
                             <li className="services__modal-service">
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design a chatbot for customer support and financial advisory services and much more.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
                             </li>
                         </ul>
                     </div>
@@ -250,6 +274,10 @@ const Themes = () => {
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design a cybersecurity training platform with gamified learning modules and much more.</p>
                             </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -285,6 +313,45 @@ const Themes = () => {
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design a real-time monitoring and control system using digital twin technology for industrial processes and much more.</p>
                             </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="services__content" data-aos="zoom-in-right">
+                    <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1708001784/hackathon/Theme%20Icons/sktndnbuuslw7hdiw4qy.webp" alt="" />
+                    <div className='services__title-container'>
+                        <h3 className="services__title">Smart City<br />Smart Automation</h3>
+                        <span className="services__button" onClick={() => toggleTab(10)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
+                    </div>
+
+                </div>
+                <div className={toggleState === 10 ? "services__modal active-modal" : "services__modal"}>
+                    <div className="services__modal-content">
+                        <FontAwesomeIcon onClick={() => toggleTab(0)} icon={faXmark} className="services__modal-close" />
+
+                        <h3 className="services__modal-title">Smart City<br />Smart Automation</h3>
+
+                        <ul className="services__modal-services grid">
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Focused on leveraging automation technology to enhance the efficiency and functionality of urban environments.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Explore innovative solutions to automate various aspects of city infrastructure and services, aiming to improve sustainability, connectivity, and quality of life for residents.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">Create innovation for smart cities to optimize urban planning and resource management.</p>
+                            </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -293,6 +360,7 @@ const Themes = () => {
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691940/hackathon/Theme%20Icons/ot3pydfjaqktlacsusrc.png" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">Open Innovation</h3>
+                        <span id='novice'>Only for Novice Track</span>
                         <span className="services__button" onClick={() => toggleTab(9)}>View More <FontAwesomeIcon icon={faArrowRight} className="services__button-icon" /></span>
                     </div>
 
@@ -324,12 +392,14 @@ const Themes = () => {
                                 <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
                                 <p className="services__modal-info">Design and mockups of products for companies.</p>
                             </li>
+                            <li className="services__modal-service">
+                                <FontAwesomeIcon icon={faCircleCheck} className="services__modal-icon" />
+                                <p className="services__modal-info">The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <span>The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme.</span>
         </div>
     )
 }
