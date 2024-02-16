@@ -85,6 +85,7 @@
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    overflow: scroll;
 }
 
 .services__modal-content {
@@ -93,6 +94,7 @@
     background-color: #1e1c22;
     padding: 3.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
+    overflow: scroll;
 }
 
 .services__modal-close {
@@ -152,6 +154,8 @@
 
     .services__modal {
         padding: 0;
+        align-items: flex-start;
+        padding-top: 100px;
     }
 
     .services__modal-content {
@@ -170,6 +174,10 @@
         height: 150px;
     }
 
+    .services__modal-title {
+        font-size: 20px;
+    }
+
     .services__modal-services {
         padding: 0;
         margin-top: 16px;
@@ -181,10 +189,21 @@
 
     .services__modal-close {
         top: 1.9rem;
+        font-size: 1.3rem;
+    }
+
+    .services__modal-icon {
+        font-size: 0.75rem;
+    }
+
+    .services__modal-info {
+        font-size: 14px;
     }
 }
 
 #novice {
     font-family: var(--raleway-font);
     color: rgb(205, 205, 205);
+    text-align: center;
+    font-size: 15px;
 }
