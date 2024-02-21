@@ -321,7 +321,7 @@ const Themes = () => {
                     </div>
                 </div>
 
-                <div className="services__content" data-aos="zoom-in-right">
+                {/* <div className="services__content" data-aos="zoom-in-right">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1708001784/hackathon/Theme%20Icons/sktndnbuuslw7hdiw4qy.webp" alt="" />
                     <div className='services__title-container'>
                         <h3 className="services__title">Smart City<br />Smart Automation</h3>
@@ -354,7 +354,7 @@ const Themes = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="services__content" data-aos="zoom-in-left">
                     <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691940/hackathon/Theme%20Icons/ot3pydfjaqktlacsusrc.png" alt="" />
