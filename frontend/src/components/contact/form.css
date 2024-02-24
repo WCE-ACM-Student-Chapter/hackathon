@@ -21,7 +21,6 @@ form input {
 
 form div {
     width: 40vw !important;
-    ;
 }
 
 .form_button_container {
@@ -35,7 +34,6 @@ form div {
 
 @media screen and (max-width: 1000px) {
     form {
-        width: 80vw;
         padding: 30px 30px;
     }
 
@@ -58,6 +56,10 @@ form div {
     form button {
         margin: auto;
         margin-top: 30px;
+    }
+
+    form div {
+        width: 75vw !important;
     }
 
 
