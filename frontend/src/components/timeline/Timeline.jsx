@@ -15,7 +15,7 @@ const Timeline = () => {
                 </div>
                 <div className="tcard">
                     <div className="info" data-aos="fade-right">
-                        <div className="date">1st Mar 12:00 PM</div>
+                        <div className="date">1st Mar 11:59 PM</div>
                         <div className="heading">Registration Ends</div>
                         <p>We'll review your application and will let you know.</p>
                     </div>
