@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
 import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx';
 import Prizes from './components/prizes/prizes.jsx';
@@ -23,6 +23,18 @@ const App = () => {
 	useEffect(() => {
 		AOS.init();
 		setIsLoading(false);
+		Swal.fire({
+			title: 'Welcome to <br> WCE Hackathon 2024!',
+			html: 'Round 2 of the Hackathon is postponed to 23rd and 24th March 2024. Do checkout the website for further updates!',
+			icon: 'info',
+			confirmButtonText: 'Noted',
+			confirmButtonColor: 'rgb(113, 5, 255)',
+			showCancelButton: false,
+		}).then((result) => {
+			if (result.isConfirmed) {
+				document.getElementById('registration').scrollIntoView();
+			}
+		});
 	}, []);
 
 	return (

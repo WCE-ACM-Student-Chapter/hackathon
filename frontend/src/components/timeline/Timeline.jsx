@@ -29,21 +29,21 @@ const Timeline = () => {
                 </div>
                 <div className="tcard">
                     <div className="info" data-aos="fade-right">
-                        <div className="date">16th Mar 8:00 AM</div>
+                        <div className="date">23rd Mar 8:00 AM</div>
                         <div className="heading">Hackathon Starts</div>
                         <p>Kick start your journey and turn your imagination for real.</p>
                     </div>
                 </div>
                 <div className="tcard">
                     <div className="info" data-aos="fade-left">
-                        <div className="date">17th Mar 12:00 PM</div>
+                        <div className="date">24th Mar 12:00 PM</div>
                         <div className="heading">Hackathon Ends</div>
                         <p>Submit your project through GitHub repository.</p>
                     </div>
                 </div>
                 <div className="tcard">
                     <div className="info" data-aos="fade-right">
-                        <div className="date">17th Mar 4:00 PM</div>
+                        <div className="date">24th Mar 4:00 PM</div>
                         <div className="heading">Prize Distribution</div>
                         <p>Winners and participants will be awarded with prizes and certificates.</p>
                     </div>
