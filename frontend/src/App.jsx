@@ -24,16 +24,17 @@ const App = () => {
 		AOS.init();
 		setIsLoading(false);
 		Swal.fire({
-			title: 'Welcome to <br> WCE Hackathon 2024!',
-			html: 'Round 2 of the Hackathon is postponed to 23rd and 24th March 2024. Do checkout the website for further updates!',
+			title: 'Round 1 Results Announced!',
+			html: 'Here are the list of shortlisted teams for Round 2. See you on 23rd and 24th March 2024. Do checkout the website for further updates. All the best!',
 			icon: 'info',
-			confirmButtonText: 'Noted',
+			confirmButtonText: 'Download Results',
 			confirmButtonColor: 'rgb(113, 5, 255)',
-			showCancelButton: false,
+			cancelButtonText: 'Close',
+			showCancelButton: true,
+			allowOutsideClick: false,
 		}).then((result) => {
-			if (result.isConfirmed) {
-				document.getElementById('registration').scrollIntoView();
-			}
+			if (result.isConfirmed)
+				window.open('https://tinyurl.com/Hackathon24Round1Shortlisted', '_blank');
 		});
 	}, []);
 

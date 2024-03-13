@@ -46,8 +46,7 @@ const Home = () => {
                     <div id="tagline">CODE | CREATE | CONQUER</div>
                     <div className='info_container'><span id='info'></span></div>
                     <div className='button_container'>
-                        <a href="https://bit.ly/wcehackathon24unstop" target='_blank'><button className='button'>Register Now</button></a>
-                        <a href="https://forms.gle/rW6U1v2Tim3FUyW78" target='_blank'><button className='button'>Become a Mentor</button></a>
+                        <a href="https://tinyurl.com/Hackathon24Round1Shortlisted" target='_blank'><button className='button'>Round 1 Results</button></a>
                     </div>
                     <div className='icons_container'>
                         <a href="https://www.youtube.com/@wceacm?sub_confirmation=1" target='blank'><FontAwesomeIcon icon={faYoutube} className='social_icons' /></a>
