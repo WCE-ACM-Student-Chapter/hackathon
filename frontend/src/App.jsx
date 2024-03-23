@@ -16,6 +16,8 @@ import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Loader from './components/loader/Loader.jsx';
 import RegistrationForm from './components/contact/RegistrationForm.jsx';
+import Countdown from './components/countdown/countdown.jsx';
+import standeewhite from './assets/standee-white.png';
 
 const App = () => {
 	const [isLoading, setIsLoading] = React.useState(true);
@@ -23,36 +25,42 @@ const App = () => {
 	useEffect(() => {
 		AOS.init();
 		setIsLoading(false);
-		Swal.fire({
-			title: 'Round 1 Results Announced!',
-			html: 'Here are the list of shortlisted teams for Round 2. See you on 23rd and 24th March 2024. Do checkout the website for further updates. All the best!',
-			icon: 'info',
-			confirmButtonText: 'Download Results',
-			confirmButtonColor: 'rgb(113, 5, 255)',
-			cancelButtonText: 'Close',
-			showCancelButton: true,
-			allowOutsideClick: false,
-		}).then((result) => {
-			if (result.isConfirmed)
-				window.open('https://tinyurl.com/Hackathon24Round1Shortlisted', '_blank');
-		});
+
+		var dataText = ["Moments ticking, solutions clicking!", "Clock's ticking, ideas sticking!", "Countdown to innovation!", "Coding against the clock!", "Time slipping, but ideas gripping!"];
+		function typeWriter(text, i, fnCallback) {
+			if (i < (text.length)) {
+				document.getElementById("info").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+				setTimeout(function () {
+					typeWriter(text, i + 1, fnCallback)
+				}, 50);
+			} else if (typeof fnCallback == 'function') {
+				setTimeout(fnCallback, 1000);
+			}
+		}
+
+		function StartTextAnimation(i) {
+			if (typeof dataText[i] == 'undefined') {
+				StartTextAnimation(0);
+			}
+			if (i < dataText[i].length) {
+				typeWriter(dataText[i], 0, function () {
+					StartTextAnimation(i + 1);
+				});
+			}
+		}
+
+		StartTextAnimation(0);
 	}, []);
 
 	return (
 		<>
 			{isLoading ? <Loader /> : null}
-			<Header />
-			<Home />
-			<About />
-			<Timeline />
-			<Themes />
-			<Prizes />
-			<Sponsors />
-			<Gallery />
-			<Organizers />
-			<FAQ />
-			<RegistrationForm />
-			<Footer />
+			<div className="container-23">
+				<img src={standeewhite} />
+				<h3>IMPLEMENTATION ROUND</h3>
+				<span id="info"></span>
+				<Countdown />
+			</div>
 		</>
 	);
 };
