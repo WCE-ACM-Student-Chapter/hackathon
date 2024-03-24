@@ -8,8 +8,7 @@
 .countdown-box {
 	text-align: center;
 	padding: 7px 10px;
-	margin-top: 20px;
-	width: 230px;
+	width: 85px;
 	background: transparent;
 	border-right: 2px solid white;
 	box-sizing: border-box;
@@ -21,7 +20,7 @@
 
 .countdown-box span {
 	font-family: "IntegralCF-Bold", sans-serif;
-	font-size: 90px;
+	font-size: 32px;
 	font-weight: bold;
 	color: white;
 	letter-spacing: 1px;
@@ -30,28 +29,21 @@
 
 .countdown-box p {
 	font-family: "IntegralCF-Regular", sans-serif;
-	font-size: 40px;
+	font-size: 14px;
 	letter-spacing: 1px;
 	color: white;
-	margin-top: 20px;
 	margin-bottom: 0;
 }
 
 @media screen and (max-width: 1000px) {
 	.countdown-box span {
-		font-size: 50px;
+		font-size: 22px;
 		letter-spacing: 1.5px;
 	}
 
 	.countdown-box {
 		padding: 4px 7px;
-		min-width: 100px;
+		width: 70px;
 		margin-top: 10px;
 	}
-
-	.countdown-box p {
-		margin-top: 5px;
-		font-size: 20px;
-	}
-
 }
