@@ -47,7 +47,6 @@ const Home = () => {
                     <div className='info_container'><span id='info'></span></div>
                     <div className='button_container'>
                         <a href="https://tinyurl.com/Hackathon24Round1Shortlisted" target='_blank'><button className='button'>Round 1 Results</button></a>
-                        <a href="https://drive.google.com/file/d/1OfTi5WrcSDNyDWmt292hK77fmzK7VeGG/view?usp=sharing" target='_blank'><button className='button'>Round 1 Waitlisted</button></a>
                     </div>
                     <div className='icons_container'>
                         <a href="https://www.youtube.com/@wceacm?sub_confirmation=1" target='blank'><FontAwesomeIcon icon={faYoutube} className='social_icons' /></a>
