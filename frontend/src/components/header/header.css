@@ -1,6 +1,6 @@
 .header {
     box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
-    background-color: #14141595;
+    background-color: #0000004e;
     backdrop-filter: blur(8px);
 }
 
@@ -40,7 +40,7 @@ nav .container {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-    font-family: var(--raleway-font);
+    font-family: var(--main-font);
     color: white;
     font-weight: 600;
     transition: .3s ease-in-out;
@@ -89,7 +89,7 @@ nav .container {
 /* For small devices */
 @media screen and (max-width: 1000px) {
     .header {
-        background-color: #141415be;
+        background-color: #0000004e;
         position: fixed;
     }
 

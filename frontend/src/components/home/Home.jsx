@@ -3,37 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faXTwitter, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import './home.css'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import ModelViewer from '../partials/Modelviewer'
 import Countdown from '../countdown/countdown'
-import RegistrationForm from '../contact/RegistrationForm'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { ReactTyped } from "react-typed"
 
 const Home = () => {
 
     useEffect(() => {
         var dataText = ["Battle of Development.", "Win Amazing Prizes.", "Separate Tracks.", "Novice and Expert."];
-        function typeWriter(text, i, fnCallback) {
-            if (i < (text.length)) {
-                document.getElementById("info").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
-                setTimeout(function () {
-                    typeWriter(text, i + 1, fnCallback)
-                }, 50);
-            } else if (typeof fnCallback == 'function') {
-                setTimeout(fnCallback, 1000);
-            }
-        }
-
-        function StartTextAnimation(i) {
-            if (typeof dataText[i] == 'undefined') {
-                StartTextAnimation(0);
-            }
-            if (i < dataText[i].length) {
-                typeWriter(dataText[i], 0, function () {
-                    StartTextAnimation(i + 1);
-                });
-            }
-        }
-        // start the text animation
-        StartTextAnimation(0);
     }, []);
 
     return (
@@ -42,11 +19,23 @@ const Home = () => {
                 <div className="title">
                     <div id='college'><span>WCE</span></div>
                     <span id='main_title'>HACKATHON</span>
-                    <div id='year'><span>23-24 MAR 24</span></div>
+                    <div id='year'><span>15-16 MAR 25</span></div>
                     <div id="tagline">CODE | CREATE | CONQUER</div>
-                    <div className='info_container'><span id='info'></span></div>
+                    <ReactTyped
+                        className="info_container"
+                        strings={[
+                            "Battle of Development.",
+                            "Win Amazing Prizes.",
+                            "Separate Tracks.",
+                            "Novice and Expert.",
+                        ]}
+                        typeSpeed={20}
+                        backSpeed={30}
+                        loop
+                    />
                     <div className='button_container'>
-                        <a href="https://tinyurl.com/Hackathon24Round1Shortlisted" target='_blank'><button className='button'>Round 1 Results</button></a>
+                        <a href="https://unstop.com/o/X2mekLx?lb=LqtjHTQ" target='_blank'><button className='button'>Register Now</button></a>
+                        <a href="https://drive.google.com/file/d/159lSXSRfIlQN-pTzWp1CA2M6yZeoHX0e/view?usp=sharing" target='_blank'><button className='button'>Brochure</button></a>
                     </div>
                     <div className='icons_container'>
                         <a href="https://www.youtube.com/@wceacm?sub_confirmation=1" target='blank'><FontAwesomeIcon icon={faYoutube} className='social_icons' /></a>
@@ -58,7 +47,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="right_part">
-                <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706690072/hackathon/o1vyqhxcv6yawv10gapw.png" alt="WCE Hackathon '24" />
+                <img src="/acmlogo.png" alt="Hackathon" />
+                {/* <ModelViewer modelPath="/acmfinal.glb" scale={5.2} mobileScale={6} /> */}
                 <Countdown />
             </div>
         </div>

@@ -4,7 +4,8 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .services__container {
@@ -43,16 +44,16 @@
 
 .services__title {
     font-size: 22px;
-    font-family: var(--raleway-font);
+    font-family: var(--main-font);
     font-weight: bold;
     text-align: center;
     margin: 0;
-    line-height: 1.25;
+    line-height: 1.35;
 }
 
 .services__button {
     color: rgb(174, 174, 174);
-    font-family: var(--quicksand-font);
+    font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
     display: inline-flex;
@@ -113,7 +114,7 @@
 .services__modal-title {
     font-size: 24px;
     font-weight: bold;
-    font-family: var(--raleway-font);
+    font-family: var(--main-font);
     margin-bottom: var(--mb-2);
 }
 
@@ -133,13 +134,13 @@
     color: white;
     font-size: 1rem;
     padding-top: 5px;
-    font-family: var(--quicksand-font);
+    font-family: var(--main-font);
     font-weight: 500;
 }
 
 .services__modal-info {
     font-size: 16px;
-    font-family: var(--quicksand-font);
+    font-family: var(--main-font);
     font-weight: 400;
 }
 
@@ -147,6 +148,38 @@
 .active-modal {
     opacity: 1;
     visibility: visible;
+}
+
+.themes__tabs {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.themes__tabs #vertical__line {
+    border-left: 2px solid white;
+    height: 30px;
+}
+
+.themes__tabs .themes__tab {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    line-height: 1.3;
+    border-bottom: 2px solid transparent;
+}
+
+.themes__tabs .themes__tab:hover {
+    color: var(--primary-blue-light);
+}
+
+.themes__tabs .active-tab {
+    color: var(--primary-blue-light);
+    border-bottom: 2px solid var(--primary-blue-light);
 }
 
 /* For medium devices */
@@ -202,7 +235,7 @@
 }
 
 #novice {
-    font-family: var(--raleway-font);
+    font-family: var(--main-font);
     color: rgb(205, 205, 205);
     text-align: center;
     font-size: 15px;

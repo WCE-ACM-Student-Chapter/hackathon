@@ -6,9 +6,6 @@
 	height: 100vh;
 	width: 100vw;
 	z-index: 10000;
-	background: radial-gradient(circle farthest-side at 80% 40%, var(--container-color) 10%, var(--body-color) 40%);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 	position: fixed;
 }
 
@@ -16,18 +13,17 @@
 	width: 60px;
 	aspect-ratio: 1;
 	background:
-		linear-gradient(45deg, #d9a4ff 50%, #0000 0),
-		linear-gradient(45deg, #0000 50%, #d9a4ff 0),
-		linear-gradient(-45deg, #edffc4 50%, #0000 0),
-		linear-gradient(-45deg, #0000 50%, #edffc4 0),
-		linear-gradient(#554236 0 0);
+		linear-gradient(45deg, var(--primary-blue-light) 50%, #0000 0),
+		linear-gradient(45deg, #0000 50%, var(--title-color-dark) 0),
+		linear-gradient(-45deg, var(--primary-blue) 50%, #0000 0),
+		linear-gradient(-45deg, #0000 50%, #c4f0ff 0),
+		linear-gradient(#364e55 0 0);
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	animation: l17 1s infinite alternate;
 }
 
 @keyframes l17 {
-
 	0%,
 	20% {
 		background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;

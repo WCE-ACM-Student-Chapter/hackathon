@@ -8,22 +8,20 @@
 
 .sponsors-list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
+	gap: 40px;
 	margin-top: 40px;
 }
 
 .sponsor-card {
-	background-color: #ffffff;
-	padding: 30px 40px;
+	background-color: transparent;
 	border-radius: 10px;
-	text-align: center;
 	display: flex;
-	margin: 20px;
 }
 
 .sponsor-card img {
-	width: 150px;
+	height: 120px;
 }
 
 .sponsor-card h3 {

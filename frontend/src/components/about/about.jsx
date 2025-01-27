@@ -15,7 +15,7 @@ const About = () => {
 					<p><b>WCE ACM Student Chapter</b>, authorized by ACM INDIA COUNCIL on March 18, 2016, aims to impart knowledge and promote innovation in the field of computer science. Deriving inspiration from the parent organization ACM, we thrive to achieve the aim by conducting various technical & non-technical activities.</p>
 				</div>
 				<div data-aos="fade-up">
-					<p>The highlight of the VISION event at WCE, Sangli is the <b>WCE Hackathon</b>, organized by WCE ACM Student Chapter. As we are celebrating 8 years of WCE ACM, the <b>WCE Hackathon '24</b> is more than just a coding competition; it's a celebration of innovation, creativity, and collaboration. Our mission is to bring together passionate individuals from diverse backgrounds and skill sets, providing a platform for them to turn their ideas into reality.</p>
+					<p>The highlight of the VISION event at WCE, Sangli is the <b>WCE Hackathon</b>, organized by WCE ACM Student Chapter. As we are celebrating 9 years of WCE ACM, the <b>WCE Hackathon 2025</b> is more than just a coding competition; it's a celebration of innovation, creativity, and collaboration. Our mission is to bring together passionate individuals from diverse backgrounds and skill sets, providing a platform for them to turn their ideas into reality.</p>
 				</div>
 			</div>
 		</div>

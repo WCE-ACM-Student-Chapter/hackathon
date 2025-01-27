@@ -1,19 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './prizes.css';
 
 const Prizes = () => {
-	const prizesData = [
-		{ id: 1, icon: '🥇', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '40000' },
-		{ id: 2, icon: '🥈', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '30000' },
-		{ id: 3, icon: '🥉', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '20000' },
+	const [activeTrack, setActiveTrack] = useState('novice');
+	const [data, setData] = useState([]);
+	const expertPrizes = [
+		{ id: 1, icon: '🥇', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '35000' },
+		{ id: 2, icon: '🥈', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '25000' },
+		{ id: 3, icon: '🥉', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '15000' },
 	];
+
+	const novicePrizes = [
+		{ id: 1, icon: '🥇', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '12000' },
+		{ id: 2, icon: '🥈', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '8000' },
+		{ id: 3, icon: '🥉', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '5000' },
+	];
+
+	useEffect(() => {
+        setData(activeTrack === 'novice' ? novicePrizes : expertPrizes);
+    }, []);
 
 	return (
 		<div className="prizes-container" id='prizes' data-aos="fade-up">
 			<header>Prizes</header>
+
+			<div className="themes__tabs">
+				<span className={activeTrack === 'novice' ? 'themes__tab active-tab' : 'themes__tab'} onClick={() => { setActiveTrack('novice'); setData(novicePrizes); }}>Novice</span>
+				<div id='vertical__line'></div>
+				<span className={activeTrack === 'expert' ? 'themes__tab active-tab' : 'themes__tab'} onClick={() => { setActiveTrack('expert'); setData(expertPrizes); }}>Expert</span>
+			</div>
+
 			<div className="prizes-list">
-				{prizesData.map((prize) => (
-					<div key={prize.id} className='prize-card' data-aos="flip-left">
+				{data.map((prize) => (
+					<div key={prize.id} className={`${prize.id == 1 ? 'take-up' : ''} prize-card`} data-aos="flip-left">
 						<div className="circle"></div>
 						<span className='medal'>{prize.icon}</span>
 						<div className="main_prize">
@@ -23,7 +42,7 @@ const Prizes = () => {
 						</div>
 					</div>
 				))}
-				<span id='prize_info'>Certificates for all the participants. Exciting prizes for Novice track too and their mentors.</span>
+				<span id='prize_info'>Participation certificates for all the participants.</span>
 			</div>
 		</div>
 	);

@@ -1,188 +1,375 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-	--header-height: 3.3rem;
+    --header-height: 3.3rem;
 
-	/*========== Colors ==========*/
-	--hue: 202;
-	--sat: 100%;
-	--title-color: white;
-	--title-color-dark: rgb(197, 195, 255);
-	--title-color-light: rgb(227, 229, 255);
-	--text-color: white;
-	--body-color: #141415;
-	--container-color: #22083e;
+    /*========== Colors ==========*/
+    --hue: 220;
+    --sat: 100%;
+    --title-color: white;
+    --title-color-dark: rgb(162, 221, 255);
+    --title-color-light: rgb(227, 241, 255);
+    --primary-blue-light: #6ae6ee;
+    --primary-blue: #0982ae;
+    --primary-blue-dark: #084e6a;
+    --text-color: white;
+    --body-color: #141415;
+    --container-color: #081a26;
 
-	/*========== Font and typography ==========*/
-	--poppins-font: "Poppins", sans-serif;
-	--quicksand-font: "Quicksand", sans-serif;
-	--raleway-font: "Raleway", sans-serif;
-	--montserrat-font: "Montserrat", sans-serif;
+    /*========== Font and typography ==========*/
+    --main-font: "Plus Jakarta Sans", sans-serif;
 
-	/*.5rem = 8px | 1rem = 16px ...*/
-	--big-font-size: 3rem;
-	--h1-font-size: 2.25rem;
-	--h2-font-size: 1.5rem;
-	--h3-font-size: 1.25rem;
-	--normal-font-size: 1.1rem;
-	--small-font-size: 1rem;
-	--smaller-font-size: 0.9rem;
-	--tiny-font-size: 0.7rem;
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.1rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 0.9rem;
+    --tiny-font-size: 0.7rem;
 
-	/*========== Font weight ==========*/
-	--font-normal: 400;
-	--font-medium: 500;
-	--font-semi-bold: 600;
+    /*========== Font weight ==========*/
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
 
-	/*========== Margenes Bottom ==========*/
-	/*.5rem = 8px | 1rem = 16px ...*/
-	--mb-0-25: 0.25rem;
-	--mb-0-5: 0.5rem;
-	--mb-0-75: 0.75rem;
-	--mb-1: 1rem;
-	--mb-1-5: 1.5rem;
-	--mb-2: 2rem;
-	--mb-2-5: 2.5rem;
-	--mb-3: 3rem;
+    /*========== Margenes Bottom ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: var(--poppins-font);
-	background-color: var(--body-color);
-	background:
-		radial-gradient(circle farthest-side at 80% 40%, var(--container-color) 10%, var(--body-color) 40%);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	color: var(--text-color);
-	font-size: var(--normal-font-size);
-	scroll-behavior: smooth;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	user-select: none;
-	overflow-x: hidden !important;
+    font-family: var(--main-font);
+    background-color: var(--body-color);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    user-select: none;
+    overflow-x: hidden !important;
 }
 
 ::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 ::-webkit-scrollbar {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 .swal2-popup {
-	font-size: 1rem !important;
-	font-family: var(--quicksand-font) !important;
-	width: 500px;
+    font-size: 1rem !important;
+    font-family: var(--main-font) !important;
+    width: 500px;
 }
 
 a,
 a:visited,
 a:active {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 li {
-	list-style: none;
+    list-style: none;
 }
 
 p {
-	margin: 0;
+    margin: 0;
 }
 
 button {
-	font-family: var(--quicksand-font);
-	font-weight: 600;
-	font-size: 18px;
-	cursor: pointer;
-	border: none;
-	background-color: var(--title-color-light);
-	border: 2px solid var(--title-color-light);
-	border-radius: 50px;
-	padding: 0.5rem 1rem;
-	transition: all 0.3s ease-in-out;
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--title-color-light);
+    border: 2px solid var(--title-color-light);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-	background-color: transparent;
-	color: white;
+    background-color: transparent;
+    color: white;
 }
 
 header {
-	font-family: "IntegralCF-Bold", sans-serif;
-	font-size: 37px;
-	letter-spacing: 1px;
-	transition: .5s ease-in-out;
-	background: transparent;
-	line-height: 1.3;
+    font-family: "IntegralCF-Bold", sans-serif;
+    font-size: 37px;
+    letter-spacing: 1px;
+    transition: .5s ease-in-out;
+    background: transparent;
+    line-height: 1.3;
+    text-align: center;
 }
 
 header:hover {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
-	font-family: "Aeonik-Medium";
-	src: local("Aeonik-Medium"),
-		url("./fonts/Aeonik-Medium.woff2") format("woff2");
+    font-family: "Aeonik-Medium";
+    src: local("Aeonik-Medium"),
+        url("./fonts/Aeonik-Medium.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Aeonik-Medium";
-	src: local("Aeonik-Medium"),
-		url("./fonts/Aeonik-Medium.woff2") format("woff2");
+    font-family: "Aeonik-Medium";
+    src: local("Aeonik-Medium"),
+        url("./fonts/Aeonik-Medium.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "IntegralCF-Heavy";
-	src: local("IntegralCF-Heavy"),
-		url("./fonts/IntegralCF-Heavy.woff2") format("woff2");
+    font-family: "IntegralCF-Heavy";
+    src: local("IntegralCF-Heavy"),
+        url("./fonts/IntegralCF-Heavy.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "IntegralCF-Bold";
-	src: local("IntegralCF-Bold"),
-		url("./fonts/IntegralCF-Bold.woff2") format("woff2");
+    font-family: "IntegralCF-Bold";
+    src: local("IntegralCF-Bold"),
+        url("./fonts/IntegralCF-Bold.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "IntegralCF-Regular";
-	src: local("IntegralCF-Regular"),
-		url("./fonts/IntegralCF-Regular.woff2") format("woff2");
+    font-family: "IntegralCF-Regular";
+    src: local("IntegralCF-Regular"),
+        url("./fonts/IntegralCF-Regular.woff2") format("woff2");
 }
 
 #root {
-	width: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-	body {
-		background:
-			radial-gradient(circle farthest-side at 50% 50%, var(--container-color) 30%, var(--body-color) 80%);
-		background-attachment: fixed;
-	}
+    .swal2-popup {
+        width: 80%;
+    }
+}
 
-	.swal2-popup {
-		width: 80%;
-	}
+
+// Background Gradient
+@keyframes hero-gradient-animation {
+    0% {
+        --c-0: rgb(27, 42, 50);
+        --y-0: 80%;
+        --s-start-0: 9%;
+        --s-end-0: 55%;
+        --x-0: 85%;
+        --x-1: 60%;
+        --c-1: rgba(33, 46, 55, 0.768);
+        --s-start-1: 5%;
+        --s-end-1: 72%;
+        --y-1: 24%;
+        --c-2: hsla(203, 32%, 11%, 0.5);
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --x-2: 13%;
+        --y-2: 82%;
+        --y-3: 7%;
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --c-3: rgb(24, 46, 56);
+        --x-3: 24%;
+    }
+
+    100% {
+        --c-0: rgb(29, 42, 48);
+        --y-0: 94%;
+        --s-start-0: 9%;
+        --s-end-0: 55%;
+        --x-0: 31%;
+        --x-1: 2%;
+        --c-1: rgba(36, 55, 66, 0.751);
+        --s-start-1: 5%;
+        --s-end-1: 72%;
+        --y-1: 25%;
+        --c-2: hsla(203, 25%, 10%, 0.5);
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --x-2: 98%;
+        --y-2: 20%;
+        --y-3: 92%;
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --c-3: rgba(25, 48, 60, 0.734);
+        --x-3: 95%;
+    }
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: rgb(30, 31, 31)
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 80%
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 9%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 55%
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 85%
+}
+
+@property --x-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 60%
+}
+
+@property --c-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: rgb(8, 20, 36)
+}
+
+@property --s-start-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 72%
+}
+
+@property --y-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 24%
+}
+
+@property --c-2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(53, 0%, 0%, 0.49)
+}
+
+@property --s-start-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 52%
+}
+
+@property --x-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --y-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 82%
+}
+
+@property --y-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 7%
+}
+
+@property --s-start-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --s-end-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 68%
+}
+
+@property --c-3 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: rgb(38, 40, 41)
+}
+
+@property --x-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 24%
+}
+
+.gradient-container {
+    --c-0: rgb(27, 44, 50);
+    --y-0: 80%;
+    --x-0: 85%;
+    --x-1: 60%;
+    --c-1: rgba(25, 38, 42, 0.605);
+    --y-1: 24%;
+    --c-2: hsla(207, 22%, 10%, 0.5);
+    --x-2: 13%;
+    --y-2: 82%;
+    --y-3: 7%;
+    --c-3: rgba(27, 47, 57, 0.723);
+    --x-3: 24%;
+    ;
+    background-color: rgb(0, 0, 0);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 3000 3000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3));
+    animation: hero-gradient-animation 10s linear infinite alternate;
+    background-blend-mode: overlay, normal, normal, normal, normal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }

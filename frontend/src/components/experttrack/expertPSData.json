@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Mobile App in Air Quality Domain",
+        "description": [
+            "Develop a user-friendly and informative mobile application (android/iOS) that leverages air quality data from our API to empower citizens to make informed decisions about their health and environmental impact. The app should provide users with understandable information about air quality levels in their current location and other locations in India.",
+            "Key considerations include effective data visualization using interactive maps, charts, and graphs, intuitive user interface design, personalized user experience, actionable insights, and social media engagement features like sharing visualizations."
+        ],
+        "resource": "https://drive.google.com/file/d/1tTkoeP3NzSJ_i2c4HVqmtRlwQ0E54b4V/view?usp=sharing"
+    },
+    {
+        "id": 2,
+        "title": "ML at the edge - Optimize a model for resource-constrained edge devices",
+        "description": [
+            "Many IoT devices generate real-time data streams that require immediate analysis for critical applications like predictive maintenance, anomaly detection, and real-time control. Traditionally, this analysis involves sending data to a cloud server, where a machine learning model processes the information and generates predictions. However, this approach introduces latency, increases costs (cloud computing, data transfer), and raises privacy concerns.",
+            "An IoT device with a sensor is used to measure Ozone in ambient conditions. The sensor provides - op1, op2, temp, humidity. The sensor records op1 and op2 in mV along with the meteorological parameters. Develop a solution to optimize and deploy a ML model on a resource-constrained edge device (e.g., microcontroller, microprocessor) to model Ozone using the IoT device outputs (op1, op2, temp, humidity). The solution should address model compression, algorithm selection, and edge device implementation, with performance evaluation comparing the edge-deployed model in terms of model accuracy metrics - RMSE, MAE, MAPE, R^2."
+        ],
+        "resource": "https://drive.google.com/file/d/1hsCJIaPniPRuBUPVKJTDMKTL_q1Kpkrm/view?usp=sharing"
+    },
+    {
+        "id": 3,
+        "title": "Develop an intelligent system for anomaly detection in a time-series dataset",
+        "description": [
+            "Many critical systems generate time-series data, such as sensor readings from industrial equipment, stock market prices, network traffic, and weather patterns. Identifying anomalies in these time series is crucial for predictive maintenance, fraud detection, and early warning systems. Traditional methods often rely on manual analysis or simple threshold-based rules, which are often insufficient for complex patterns and evolving data characteristics.",
+            "Develop an intelligent system for detecting anomalies in a time-series dataset. The system should include a robust data pipeline for ingesting data daily and using an appropriate database to manage it. It should apply statistical methods (like moving averages standard deviation and outlier detection) and machine learning techniques (e.g., ARIMA, LSTM, isolation forest) for anomaly detection. The system should evaluate various methods and select the best one for the dataset. Additionally, automated daily reports summarizing the analysis and key insights should be generated."
+        ],
+        "resource": "https://drive.google.com/file/d/1TqA40cHeQGmU9K7eoTpWEHbqL-B89DxW/view?usp=sharing"
+    },
+    {
+        "id": 4,
+        "title": "The People's Map of India",
+        "description": [
+            "A GIS-based web application/dashboard aimed at visualizing and analyzing various demographic, socio-economic, environmental and sustainability-related data across India. Participants will develop a dashboard that aggregates publicly available data from diverse sources, presenting it in an interactive map format.",
+            "The dashboard should aggregate data from multiple publicly available sources, including government databases, NGOs, and international organizations. It must provide an interactive map of India, allowing users to visualize various parameters. Additionally, the dashboard should offer customization options, enabling users to select specific data layers (such as pollution levels or temperature) and timeframes to analyze trends over time. Furthermore, the platform should include export and sharing features, allowing users to generate and share the map view in an image format."
+        ],
+        "resource": "https://drive.google.com/file/d/1qx6bKMcZXqymyts34KT8rigtWOAxr3gN/view?usp=sharing"
+    }
+]

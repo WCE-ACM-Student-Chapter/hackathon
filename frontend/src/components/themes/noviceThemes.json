@@ -1,0 +1,74 @@
+[
+    {
+        "id": 2,
+        "title": "Education",
+        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1707888302/hackathon/Theme%20Icons/tnxzxtyrdkpjlpcvbdjo.png",
+        "description": [
+            "Develop educational games for teaching various subjects such as mathematics, science, or language.",
+            "Build a gamified learning platform with personalized learning paths for students.",
+            "Create interactive simulations for historical events or scientific experiments.",
+            "Design multiplayer educational games for collaborative learning experiences and much more.",
+            "The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme."
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Smart Agriculture",
+        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615886/hackathon/Theme%20Icons/ojbtu3a4bxxsthzzvnwi.webp",
+        "description": [
+            "Develop a predictive analytics tool using machine learning to optimize crop yields.",
+            "Build an IoT-based smart irrigation system for efficient water usage in agriculture.",
+            "Create a drone-based monitoring system for crop health assessment.",
+            "Design a mobile application for farmers to remotely monitor and control farm equipment and much more.",
+            "The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Energy and Utilities",
+        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615886/hackathon/Theme%20Icons/sbhldkmxta52z0mwgdvb.webp",
+        "description": [
+            "Develop a smart energy management system to optimize renewable energy usage.",
+            "Build a portable solar-powered device for charging electronic devices.",
+            "Create a system for monitoring and optimizing energy efficiency in buildings.",
+            "Design a wind turbine monitoring system using IoT sensors for predictive maintenance and much more.",
+            "The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme."
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Envionmental Sustainability",
+        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1737931613/hackathon/Theme%20Icons/bwixtfdwlhvfbfrhroi1.png",
+        "description": [
+            "Develop educational games for teaching various subjects such as mathematics, science, or language.",
+            "Build a gamified learning platform with personalized learning paths for students.",
+            "Create interactive simulations for historical events or scientific experiments.",
+            "Design multiplayer educational games for collaborative learning experiences and much more.",
+            "The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme."
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Fintech",
+        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1707887924/hackathon/Theme%20Icons/v98frmihzztvm2squecx.png",
+        "description": [
+            "Develop a blockchain-based solution for secure and transparent financial transactions.",
+            "Build a mobile banking application with advanced security features like biometric authentication.",
+            "Create a predictive analytics tool for fraud detection and prevention in banking transactions.",
+            "Design a chatbot for customer support and financial advisory services and much more.",
+            "The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme."
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Open Innovation",
+        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691940/hackathon/Theme%20Icons/ot3pydfjaqktlacsusrc.png",
+        "description": [
+            "Develop innovative solutions that address environmental sustainability challenges.",
+            "Harness the power of technology for social impact by addressing societal issues, promoting inclusivity, or improving the well-being of communities.",
+            "Develop projects that showcase the collaborative potential of humans and AI working together.",
+            "Design and mockups of products for companies.",
+            "The above points are merely some ideas related to the theme. You can choose your kind of innovation aligned to this theme."
+        ]
+    }
+]

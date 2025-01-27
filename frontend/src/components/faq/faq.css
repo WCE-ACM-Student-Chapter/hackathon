@@ -17,7 +17,7 @@
 }
 
 .accordion-button {
-    font-family: var(--quicksand-font);
+    font-family: var(--main-font);
     font-weight: 600;
     font-size: 18px;
     background-color: transparent;
@@ -31,7 +31,7 @@
 }
 
 .accordion-collapse {
-    font-family: var(--quicksand-font);
+    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 400;
     color: white;

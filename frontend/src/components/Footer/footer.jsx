@@ -24,7 +24,7 @@ export default function Footer() {
 		<footer>
 			<img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706693846/hackathon/a5vxbuguvzjrq0gnlr4x.png" alt="" />
 			<div className="copyright_text">
-				<span>Copyright ©2024. All rights reserved by</span>
+				<span>Copyright ©2025. All rights reserved by</span>
 				<span>WCE ACM Student Chapter</span>
 			</div>
 		</footer>
