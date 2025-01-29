@@ -2,29 +2,18 @@ import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
 import axios from 'axios'
 import Swal from 'sweetalert2'
-import './form.css'
+import './contact.css'
 
 const successToastMessage = () => {
     Swal.fire({
         icon: 'success',
-        title: 'Registration Successful!',
-        html: 'Thank you for registering for the event! <br> Kindly check your mail for the Unstop link!',
+        title: 'Message Sent!',
+        html: "Thank you for contacting us! <br><br> Our organizeres will respond to your message within 2 working days!",
         footer: '<a href="/" style="color:black;">Go to Home</a>'
     }).then(function () {
         window.location.href = '/';
     });
 };
-
-const duplicateToastMessage = () => {
-    Swal.fire({
-        icon: 'info',
-        title: 'Oops...',
-        html: 'You have already registered for the event! <br> Kindly check your mail',
-        footer: '<a href="/" style="color:black;">Go to Home</a>'
-    }).then(function () {
-        window.location.href = '/';
-    });
-}
 
 const errorToastMessage = () => {
     Swal.fire({
@@ -35,10 +24,11 @@ const errorToastMessage = () => {
     })
 }
 
-const RegistrationForm = () => {
+const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
-        email: ''
+        email: '',
+        message: ''
     })
 
     const handleChange = (e) => {
@@ -51,13 +41,11 @@ const RegistrationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        await axios.post('https://wcehackathon-backend.onrender.com/api/v1/upload/signup', formData)
+        await axios.post('https://wcehackathon-backend.onrender.com/api/v1/raiseQuery', formData)
             .then(res => {
                 console.log(res.data.duplicate)
                 if (res.data.success) {
                     successToastMessage()
-                } else if (res.data.duplicate) {
-                    duplicateToastMessage()
                 } else {
                     errorToastMessage()
                 }
@@ -76,6 +64,10 @@ const RegistrationForm = () => {
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" name="email" placeholder="Enter email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter valid email address" required autoComplete="off" value={formData.email} onChange={handleChange} />
                 </Form.Group>
+                <Form.Group className="mb-2" controlId="formBasicMessage">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" name="message" rows={3} placeholder="Enter your message" title="Enter your message" required autoComplete="off" value={formData.message} onChange={handleChange} />
+                </Form.Group>
                 <div className="form_button_container">
                     <button type='submit'>Submit</button>
                     <a href="https://unstop.com/o/X2mekLx?lb=LqtjHTQ" target='_blank'><button type='button'>Register at Unstop</button></a>
@@ -85,4 +77,4 @@ const RegistrationForm = () => {
     )
 }
 
-export default RegistrationForm
+export default Contact

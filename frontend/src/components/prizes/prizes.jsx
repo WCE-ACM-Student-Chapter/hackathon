@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './prizes.css';
 
 const Prizes = () => {
-	const [activeTrack, setActiveTrack] = useState('novice');
+	const [activeTrack, setActiveTrack] = useState('expert');
 	const [data, setData] = useState([]);
 	const expertPrizes = [
 		{ id: 1, icon: '🥇', description: 'TO BE REVEALED SOON! STAY TUNED!', money: '35000' },
@@ -17,17 +17,17 @@ const Prizes = () => {
 	];
 
 	useEffect(() => {
-        setData(activeTrack === 'novice' ? novicePrizes : expertPrizes);
-    }, []);
+		setData(activeTrack === 'novice' ? novicePrizes : expertPrizes);
+	}, []);
 
 	return (
 		<div className="prizes-container" id='prizes' data-aos="fade-up">
 			<header>Prizes</header>
 
 			<div className="themes__tabs">
-				<span className={activeTrack === 'novice' ? 'themes__tab active-tab' : 'themes__tab'} onClick={() => { setActiveTrack('novice'); setData(novicePrizes); }}>Novice</span>
-				<div id='vertical__line'></div>
 				<span className={activeTrack === 'expert' ? 'themes__tab active-tab' : 'themes__tab'} onClick={() => { setActiveTrack('expert'); setData(expertPrizes); }}>Expert</span>
+				<div id='vertical__line'></div>
+				<span className={activeTrack === 'novice' ? 'themes__tab active-tab' : 'themes__tab'} onClick={() => { setActiveTrack('novice'); setData(novicePrizes); }}>Novice</span>
 			</div>
 
 			<div className="prizes-list">
@@ -42,8 +42,8 @@ const Prizes = () => {
 						</div>
 					</div>
 				))}
-				<span id='prize_info'>Participation certificates for all the participants.</span>
 			</div>
+			<span id='prize_info'>Participation certificates for all the participants.</span>
 		</div>
 	);
 };

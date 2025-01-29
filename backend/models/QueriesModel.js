@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const userSchema = new mongoose.Schema(
+const queriesSchema = new mongoose.Schema(
     {
         name: {
             type: String,
@@ -9,10 +9,11 @@ const userSchema = new mongoose.Schema(
         email: {
             type: String,
             required: true
+        },
+        message: {
+            type: String,
+            required: true
         }
-    },
-    {
-        collection: 'users'
     })
 
-module.exports = mongoose.model("User", userSchema)
+module.exports = mongoose.model("Queries", queriesSchema)
