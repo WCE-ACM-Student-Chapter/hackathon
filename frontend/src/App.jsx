@@ -9,8 +9,8 @@ import Footer from './components/Footer/footer.jsx';
 import Sponsors from './components/sponsors/sponsors.jsx';
 import Timeline from './components/timeline/Timeline.jsx';
 import FAQ from './components/faq/FAQ.jsx';
-import Themes from './components/themes/Themes.jsx';
-import ExpertTrack from './components/experttrack/ExpertTrack.jsx';
+import NoviceThemes from './components/noviceThemes/NoviceThemes.jsx';
+import ExpertPS from './components/expertPS/ExpertPS.jsx';
 import Organizers from './components/organizers/Organizers.jsx';
 import Gallery from './components/gallery/Gallery.jsx';
 import AOS from 'aos';
@@ -26,7 +26,7 @@ const App = () => {
 		setIsLoading(false);
 		// Swal.fire({
 		// 	title: 'Round 1 Results Announced!',
-		// 	html: 'Here are the list of shortlisted teams for Round 2. See you on 23rd and 24th March 2025. Do checkout the website for further updates. All the best!',
+		// 	html: 'Here are the list of shortlisted teams for Round 2. See you on 15th and 16th March 2025. Do checkout the website for further updates. All the best!',	
 		// 	icon: 'info',
 		// 	confirmButtonText: 'Download Results',
 		// 	confirmButtonColor: 'rgb(113, 5, 255)',
@@ -47,8 +47,8 @@ const App = () => {
 			<Home />
 			<About />
 			<Timeline />
-			<Themes />
-			<ExpertTrack />
+			<NoviceThemes />	
+			<ExpertPS />
 			<Prizes />
 			<Sponsors />
 			<Gallery />

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { faXmark, faCircleCheck, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './themes.css';
+import './noviceThemes.css';
 
 // Import the themes data
 import noviceThemes from './noviceThemes.json';
 
-const Themes = () => {
+const NoviceThemes = () => {
     const [toggleState, setToggleState] = useState(0);
     const [data, setData] = useState([]);
     const [activeTrack, setActiveTrack] = useState('novice');
@@ -22,6 +22,7 @@ const Themes = () => {
     return (
         <div className='themes_container' id='noviceThemes' data-aos="fade-up">
             <header>NOVICE TRACK THEMES</header>
+            <span className='track_tag'>For <b>First Year</b> and <b>Second Year</b> Students Only</span>
 
             {/* <div className="themes__tabs">
                 <span className={activeTrack === 'novice' ? 'themes__tab active-tab' : 'themes__tab'} onClick={() => { setActiveTrack('novice'); setData(noviceThemes); }}>Novice</span>
@@ -62,4 +63,4 @@ const Themes = () => {
     );
 }
 
-export default Themes;
+export default NoviceThemes;

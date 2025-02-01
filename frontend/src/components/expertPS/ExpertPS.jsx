@@ -6,7 +6,7 @@ import {
     faChartLine,
     faGlobe
 } from '@fortawesome/free-solid-svg-icons';
-import './experttrack.css';
+import './expertPS.css';
 import expertPSData from './expertPSData.json';
 
 const iconMapper = {
@@ -16,10 +16,12 @@ const iconMapper = {
     4: faGlobe
 };
 
-const ExpertTrack = () => {
+const ExpertPS = () => {
     return (
         <div id='expertPS' className="expert-container" data-aos="fade-up">
             <header>Expert Track Problem Statements</header>
+            <span className='track_tag'>For <b>Third Year</b> and <b>Final Year</b> Students Only</span>
+
             <div className="expert-grid">
                 {expertPSData.map((ps) => (
                     <div key={ps.id} className="expert-card" data-aos="fade-up">
@@ -48,4 +50,4 @@ const ExpertTrack = () => {
     )
 }
 
-export default ExpertTrack
+export default ExpertPS

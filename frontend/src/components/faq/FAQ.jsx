@@ -60,7 +60,42 @@ const faqData = [
         id: 3,
         question: "Are team members from other colleges allowed?",
         answer: "Yes, WCE Hackathon 2025 welcomes participants from diverse backgrounds, including those from different colleges. The hackathon encourages collaboration and networking among individuals with varied experiences and expertise. 🌍",
-    }
+    },
+    {
+        id: 4,
+        question: "What is the eligibility for the novice track?",
+        answer: "The novice track is open to team comprising of only first-year and second-year students. This track is designed to encourage beginners to explore problem-solving, coding, and teamwork in a competitive yet supportive environment. It's a great opportunity to learn, innovate, and experience a hackathon for the first time! 🎓"
+    },
+    {
+        id: 5,
+        question: "What is the eligibility for the expert track?",
+        answer: "The expert track is open to team comprising of at least one third-year or final-year student. 🎓"
+    },
+    {
+        id: 6,
+        question: "What is the duration of the hackathon?",
+        answer: "The hackathon will run for 24 hours, packed with coding, brainstorming, and innovation. 📅"
+    },
+    {
+        id: 7,
+        question: "Do I need to pay any registration fees?",
+        answer: "No, there is no registration fee. The hackathon is free to participate in."
+    },
+    {
+        id: 8,
+        question: "Will there be prizes for the winners?",
+        answer: "Yes, there will be exciting prizes and rewards for the top-performing teams."
+    },
+    {
+        id: 9,
+        question: "Do I need to bring my own laptop and tools?",
+        answer: "Yes, participants are expected to bring their own laptops and necessary tools for development."
+    },
+    {
+        id: 10,
+        question: "Will there be food facilities?",
+        answer: "Yes, food will be provided for all participants during the event."
+    },
 ];
 
 export default FAQ;
