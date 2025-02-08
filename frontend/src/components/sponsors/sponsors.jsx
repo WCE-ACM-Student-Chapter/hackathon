@@ -4,7 +4,7 @@ import './sponsors.css';
 
 const Sponsors = () => {
 	const sponsorCount = 2;
-	const sponsorUrls = ['https://res.cloudinary.com/dcevjlqv4/image/upload/v1737933452/hackathon/Sponsors/11.png', 'https://res.cloudinary.com/dcevjlqv4/image/upload/v1737933452/hackathon/Sponsors/22.png'];
+	const sponsorUrls = ['/finiq.png', '/respirer.png'];
 
 
 	return (

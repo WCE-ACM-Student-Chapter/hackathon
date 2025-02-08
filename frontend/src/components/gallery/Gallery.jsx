@@ -12,7 +12,7 @@ const Gallery = () => {
                 {imageFiles.map((imageNumber) => (
                     <Carousel.Item key={imageNumber} interval={1000}>
                         <img
-                            src={`https://res.cloudinary.com/dcevjlqv4/image/upload/v1737967878/hackathon/Gallery2025/${imageNumber}.jpg`}
+                            src={`/gallery/${imageNumber}.jpg`}
                             alt={imageNumber.toString()}
                         />
                     </Carousel.Item>

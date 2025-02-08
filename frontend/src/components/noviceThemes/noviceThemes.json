@@ -2,7 +2,7 @@
     {
         "id": 2,
         "title": "Education",
-        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1707888302/hackathon/Theme%20Icons/tnxzxtyrdkpjlpcvbdjo.png",
+        "image": "/themes/1.png",
         "description": [
             "Develop educational games for teaching various subjects such as mathematics, science, or language.",
             "Build a gamified learning platform with personalized learning paths for students.",
@@ -14,7 +14,7 @@
     {
         "id": 4,
         "title": "Smart Agriculture",
-        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615886/hackathon/Theme%20Icons/ojbtu3a4bxxsthzzvnwi.webp",
+        "image": "/themes/2.png",
         "description": [
             "Develop a predictive analytics tool using machine learning to optimize crop yields.",
             "Build an IoT-based smart irrigation system for efficient water usage in agriculture.",
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "title": "Energy and Utilities",
-        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1706615886/hackathon/Theme%20Icons/sbhldkmxta52z0mwgdvb.webp",
+        "image": "/themes/3.png",
         "description": [
             "Develop a smart energy management system to optimize renewable energy usage.",
             "Build a portable solar-powered device for charging electronic devices.",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "title": "Envionmental Sustainability",
-        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1737931613/hackathon/Theme%20Icons/bwixtfdwlhvfbfrhroi1.png",
+        "image": "/themes/4.png",
         "description": [
             "Develop interactive games to educate users on climate change, conservation, and sustainable living.",
             "Build an app that encourages users to adopt and maintain eco-friendly habits like reducing waste, saving water, and using renewable energy.",
@@ -50,7 +50,7 @@
     {
         "id": 6,
         "title": "Fintech",
-        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1707887924/hackathon/Theme%20Icons/v98frmihzztvm2squecx.png",
+        "image": "/themes/5.png",
         "description": [
             "Develop a blockchain-based solution for secure and transparent financial transactions.",
             "Build a mobile banking application with advanced security features like biometric authentication.",
@@ -62,7 +62,7 @@
     {
         "id": 9,
         "title": "Open Innovation",
-        "image": "https://res.cloudinary.com/dcevjlqv4/image/upload/v1706691940/hackathon/Theme%20Icons/ot3pydfjaqktlacsusrc.png",
+        "image": "/themes/6.png",
         "description": [
             "Develop innovative solutions that address environmental sustainability challenges.",
             "Harness the power of technology for social impact by addressing societal issues, promoting inclusivity, or improving the well-being of communities.",

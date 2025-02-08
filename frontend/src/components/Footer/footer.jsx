@@ -22,7 +22,7 @@ export default function Footer() {
 
 	return (
 		<footer>
-			<img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706693846/hackathon/a5vxbuguvzjrq0gnlr4x.png" alt="" />
+			<img src="/acmlogo.png" alt="" />
 			<div className="copyright_text">
 				<span>Copyright ©2025. All rights reserved by</span>
 				<span>WCE ACM Student Chapter</span>
