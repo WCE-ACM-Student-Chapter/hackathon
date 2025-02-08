@@ -19,7 +19,7 @@ const Home = () => {
                 <div className="title">
                     <div id='college'><span>WCE</span></div>
                     <span id='main_title'>HACKATHON</span>
-                    <div id='year'><span>15-16 MAR 25</span></div>
+                    <div id='year'><span>14-15 MAR 25</span></div>
                     <div id="tagline">CODE | CREATE | CONQUER</div>
                     <ReactTyped
                         className="info_container"
