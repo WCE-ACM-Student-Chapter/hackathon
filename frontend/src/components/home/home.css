@@ -128,6 +128,14 @@
     width: 420px;
 }
 
+.home__info {
+    font-size: 14px;
+    margin-top: 20px;
+    font-style: italic;
+    color: rgb(255, 255, 216);
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 1000px) {
     .navbar-toggler {
@@ -188,5 +196,10 @@
 
     .social_icons {
         height: 22px;
+    }
+
+    .home__info {
+        padding: 0 40px;
+        text-align: center;
     }
 }
