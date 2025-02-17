@@ -151,6 +151,12 @@
         gap: 50px;
     }
 
+    .button_container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     .button_container button {
         flex: 1;
         width: 140px;
