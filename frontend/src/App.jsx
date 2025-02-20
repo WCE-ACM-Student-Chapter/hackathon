@@ -17,6 +17,8 @@ import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Loader from './components/loader/Loader.jsx';
 import Contact from './components/contact/Contact.jsx';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 	const [isLoading, setIsLoading] = React.useState(true);
@@ -24,6 +26,11 @@ const App = () => {
 	useEffect(() => {
 		AOS.init();
 		setIsLoading(false);
+		toast.info('Round 1 registrations and submissions are extended till 23rd Feb, 11.59 PM!', {
+			className: 'custom-toast', 
+			position: 'top-center',
+			autoClose: 5000,
+		});
 		// Swal.fire({
 		// 	title: 'Round 1 Results Announced!',
 		// 	html: 'Here are the list of shortlisted teams for Round 2. See you on 15th and 16th March 2025. Do checkout the website for further updates. All the best!',	
@@ -43,11 +50,12 @@ const App = () => {
 		<>
 			<div className="gradient-container"></div>
 			{isLoading ? <Loader /> : null}
+			<ToastContainer />
 			<Header />
 			<Home />
 			<About />
 			<Timeline />
-			<NoviceThemes />	
+			<NoviceThemes />
 			<ExpertPS />
 			<Prizes />
 			<Sponsors />

@@ -373,3 +373,12 @@ header:hover {
     height: 100%;
     z-index: -1;
 }
+
+.custom-toast {
+    background-color: #000 !important; /* Black background */
+    color: #fff !important;            /* White text */
+    font-family: var(--main-font) !important;
+    width: 100% !important;  /* Force width to 85% of the screen */
+    margin: 0 auto !important;         /* Center the toast horizontally */
+    border-radius: 4px !important;
+  }
