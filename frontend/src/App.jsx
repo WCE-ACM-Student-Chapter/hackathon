@@ -26,7 +26,7 @@ const App = () => {
 	useEffect(() => {
 		AOS.init();
 		setIsLoading(false);
-		toast.info('Round 1 registrations and submissions are extended till 23rd Feb, 11.59 PM!', {
+		toast.info('Round 1 results will be announced by 6th March, 2025!', {
 			className: 'custom-toast', 
 			position: 'top-center',
 			autoClose: 5000,
