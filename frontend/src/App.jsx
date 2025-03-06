@@ -29,7 +29,7 @@ const App = () => {
 		toast('Expert Track results are out. Congratulations to the shortlisted teams! 🎉', {
 			className: 'custom-toast', 
 			position: 'top-center',
-			autoClose: 10000,
+			autoClose: 5000,
 		});
 		// Swal.fire({
 		// 	title: 'Round 1 Results Announced!',

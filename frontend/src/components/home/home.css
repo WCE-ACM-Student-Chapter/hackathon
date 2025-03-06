@@ -161,7 +161,7 @@
 
     .button_container button {
         flex: 1;
-        width: 140px;
+        width: fit-content;
     }
 
     .left_part {
