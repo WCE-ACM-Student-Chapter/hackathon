@@ -26,7 +26,7 @@ const App = () => {
 	useEffect(() => {
 		AOS.init();
 		setIsLoading(false);
-		toast.info('Expert Track results are out. Congratulations to the shortlisted teams! Novice Track results will be announced on 8th March, 2025. Stay Tuned!', {
+		toast('Expert Track results are out. Congratulations to the shortlisted teams! 🎉', {
 			className: 'custom-toast', 
 			position: 'top-center',
 			autoClose: 10000,
