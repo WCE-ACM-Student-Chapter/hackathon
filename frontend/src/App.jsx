@@ -26,10 +26,10 @@ const App = () => {
 	useEffect(() => {
 		AOS.init();
 		setIsLoading(false);
-		toast.info('Round 1 results will be announced by 6th March, 2025!', {
+		toast.info('Expert Track results are out. Congratulations to the shortlisted teams! Novice Track results will be announced on 8th March, 2025. Stay Tuned!', {
 			className: 'custom-toast', 
 			position: 'top-center',
-			autoClose: 5000,
+			autoClose: 10000,
 		});
 		// Swal.fire({
 		// 	title: 'Round 1 Results Announced!',

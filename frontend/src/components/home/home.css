@@ -129,6 +129,8 @@
 }
 
 .home__info {
+    line-height: 1.7;
+    text-transform: uppercase;
     font-size: 14px;
     margin-top: 20px;
     font-style: italic;

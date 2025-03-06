@@ -33,11 +33,13 @@ const Home = () => {
                         backSpeed={30}
                         loop
                     />
-                    <span className='home__info'>FOR DETAILED INFO, DOWNLOAD THE BRIEF CASE FROM UNSTOP ONCE REGISTERED</span>
+                    {/* <span className='home__info'>FOR DETAILED INFO, DOWNLOAD THE BRIEF CASE FROM UNSTOP ONCE REGISTERED</span> */}
+                    <span className='home__info'>Expert Track results are out. Congratulations to the shortlisted teams!<br/> Novice Track results will be out on 8th March, 2025. Stay Tuned!</span>
                     <div className='button_container'>
-                        <a href="https://unstop.com/o/X2mekLx?lb=LqtjHTQ" target='_blank'><button className='button'>Register Now</button></a>
-                        <a href="https://drive.google.com/file/d/159lSXSRfIlQN-pTzWp1CA2M6yZeoHX0e/view?usp=sharing" target='_blank'><button className='button'>Brochure</button></a>
-                        <a href="https://youtu.be/5EV_UwpIJ8U" target='_blank'><button className='button'>Info Video</button></a>
+                        {/* <a href="https://unstop.com/o/X2mekLx?lb=LqtjHTQ" target='_blank'><button className='button'>Register Now</button></a> */}
+                        {/* <a href="https://drive.google.com/file/d/159lSXSRfIlQN-pTzWp1CA2M6yZeoHX0e/view?usp=sharing" target='_blank'><button className='button'>Brochure</button></a> */}
+                        <a href="https://drive.google.com/file/d/16dnANjXEvn1iDoB__kSLz6VBaLp_xyeQ/view?usp=sharing" target='_blank'><button className='button'>Results - Expert Track</button></a>
+                        {/* <a href="https://youtu.be/5EV_UwpIJ8U" target='_blank'><button className='button'>Info Video</button></a> */}
                     </div>
                     <div className='icons_container'>
                         <a href="https://www.youtube.com/@wceacm?sub_confirmation=1" target='blank'><FontAwesomeIcon icon={faYoutube} className='social_icons' /></a>
