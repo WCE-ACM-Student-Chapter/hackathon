@@ -113,6 +113,10 @@
     gap: 15px;
 }
 
+.button_container button {
+    font-size: 1rem;
+}
+
 .right_part {
     display: flex;
     flex-direction: column;
@@ -154,7 +158,7 @@
     }
 
     .button_container {
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }

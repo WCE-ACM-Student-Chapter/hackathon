@@ -17,6 +17,7 @@ import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Loader from './components/loader/Loader.jsx';
 import Contact from './components/contact/Contact.jsx';
+import ConfettiEffect from './components/confettieffect/ConfettiEffect.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -26,7 +27,7 @@ const App = () => {
 	useEffect(() => {
 		AOS.init();
 		setIsLoading(false);
-		toast('Expert Track results are out. Congratulations to the shortlisted teams! 🎉', {
+		toast('Round 1 results for both tracks are out. Congratulations to the shortlisted teams! 🎉', {
 			className: 'custom-toast', 
 			position: 'top-center',
 			autoClose: 5000,
@@ -50,6 +51,7 @@ const App = () => {
 		<>
 			<div className="gradient-container"></div>
 			{isLoading ? <Loader /> : null}
+			{!isLoading ? <ConfettiEffect /> : null}
 			<ToastContainer />
 			<Header />
 			<Home />
