@@ -8,7 +8,7 @@ const Countdown = () => {
 	const [seconds, setSeconds] = useState('00');
 
 	useEffect(() => {
-		const targetDate = new Date(2025, 2, 14, 9, 0, 0, 0).getTime();
+		const targetDate = new Date(2025, 2, 15, 11, 0, 0, 0).getTime();
 		const pad = (n) => (n < 10 ? '0' : '') + n;
 
 		const interval = setInterval(() => {
@@ -29,7 +29,10 @@ const Countdown = () => {
 	}, []);
 
 	return (
+		<>
+		<div className='title2'>Hackathon Ends in</div>
 		<div className="countdown-container">
+			
 			<div className="countdown-box">
 				<span>{days}</span>
 				<p>DAYS</p>
@@ -47,6 +50,7 @@ const Countdown = () => {
 				<p>SECS</p>
 			</div>
 		</div>
+		</>
 	);
 };
 

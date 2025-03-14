@@ -1,3 +1,12 @@
+.title2{
+	font-family: "IntegralCF-Bold", sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
 .countdown-container {
 	display: flex;
 	justify-content: center;
