@@ -33,15 +33,16 @@ const Home = () => {
                         backSpeed={30}
                         loop
                     />
-                    {/* <span className='home__info'>FOR DETAILED INFO, DOWNLOAD THE BRIEF CASE FROM UNSTOP ONCE REGISTERED</span> */}
-                    <span className='home__info'>Round 1 results are out! All the shortlisted teams kindly check your email.</span>
+                    <span className='home__info'>FOR DETAILED INFO, DOWNLOAD THE BRIEF CASE FROM UNSTOP ONCE REGISTERED</span>
+                    {/* <span className='home__info'>Round 1 results are out! All the shortlisted teams kindly check your email.</span> */}
                     <div className='button_container'>
-                        {/* <a href="https://unstop.com/o/X2mekLx?lb=LqtjHTQ" target='_blank'><button className='button'>Register Now</button></a> */}
-                        {/* <a href="https://drive.google.com/file/d/159lSXSRfIlQN-pTzWp1CA2M6yZeoHX0e/view?usp=sharing" target='_blank'><button className='button'>Brochure</button></a> */}
-                        <a href="https://drive.google.com/file/d/16dnANjXEvn1iDoB__kSLz6VBaLp_xyeQ/view?usp=sharing" target='_blank'><button className='button'>Results - Expert Track</button></a>
+                        <a href="https://unstop.com/o/X2mekLx?lb=LqtjHTQ" target='_blank'><button className='button'>Register Now</button></a>
+                        <a href="https://drive.google.com/file/d/159lSXSRfIlQN-pTzWp1CA2M6yZeoHX0e/view?usp=sharing" target='_blank'><button className='button'>Brochure</button></a>
+                        <a href="https://youtu.be/5EV_UwpIJ8U" target='_blank'><button className='button'>Info Video</button></a>
+
+                        {/* <a href="https://drive.google.com/file/d/16dnANjXEvn1iDoB__kSLz6VBaLp_xyeQ/view?usp=sharing" target='_blank'><button className='button'>Results - Expert Track</button></a>
                         <a href="https://drive.google.com/file/d/1ws7kwYE4_Nw0w-eVmDUkZM8ZVsFG_NKG/view?usp=sharing" target='_blank'><button className='button'>Results - Novice Track</button></a>
-                        <a href="https://drive.google.com/file/d/1nNoaHAS8-pFUTESawfjm2MYpMSwQHF50/view?usp=sharing" target='_blank'><button className='button'>Waitlisted Teams</button></a>
-                        {/* <a href="https://youtu.be/5EV_UwpIJ8U" target='_blank'><button className='button'>Info Video</button></a> */}
+                        <a href="https://drive.google.com/file/d/1nNoaHAS8-pFUTESawfjm2MYpMSwQHF50/view?usp=sharing" target='_blank'><button className='button'>Waitlisted Teams</button></a> */}
                     </div>
                     <div className='icons_container'>
                         <a href="https://www.youtube.com/@wceacm?sub_confirmation=1" target='blank'><FontAwesomeIcon icon={faYoutube} className='social_icons' /></a>
@@ -55,7 +56,7 @@ const Home = () => {
             <div className="right_part">
                 <img src="/acmlogo.png" alt="Hackathon" />
                 {/* <ModelViewer modelPath="/acmfinal.glb" scale={5.2} mobileScale={6} /> */}
-                <Countdown />
+                {/* <Countdown /> */}
             </div>
         </div>
     )
